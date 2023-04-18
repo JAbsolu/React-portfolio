@@ -25,7 +25,7 @@ const Footer = () => {
         }}>
             <Link
                 variant="a"
-                href="https://github.com/jabsolu"
+                href="https://github.com/JAbsolu/React-portfolio"
                 color={white} 
                 target="_blank"
                 rel="noopener noreferrer"
