@@ -227,7 +227,7 @@ import {
                     fontWeight: "bolder",
                   }}
                 >
-                  REACT JS
+                  REACT
                 </Typography>
                 <Typography
                   sx={{
@@ -251,7 +251,7 @@ import {
                       color: lightSlate,
                     }}
                   />
-                  MySQL
+                  SQL
                 </Typography>
                 <Typography
                   sx={{
