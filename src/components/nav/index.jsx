@@ -61,7 +61,7 @@ const Nav = () => {
       color: green,
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="100%">
         <Toolbar disableGutters>
           <CodeIcon 
             sx={{ display: { xs: 'none', md: 'flex' },
