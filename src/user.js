@@ -1,5 +1,3 @@
-import workspaceImg from './assets/workspace.jpg';
-import userImg from './assets/user.png';
 import todoAppImg from './assets/todoapp.png';
 import Erapp from './assets/mederImg.png';
 import ecomApp from './assets/ecommerce.png';
@@ -11,7 +9,6 @@ export const user = {
     email: `Johnson.absolu@outlook.com`,
     linkedIn : 'https://www.linkedin.com/in/johnson-absolu/',
     gitHub : 'https://github.com/JAbsolu',
-    userImage : workspaceImg,
     resume: resume,
 };
 

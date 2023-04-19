@@ -25,9 +25,6 @@ import {
     const green = themeSettings.palette.primary.green;
     const navy = themeSettings.palette.primary.navy;
     const darkNavy = themeSettings.palette.primary.darkNavy;
-    const lightNavy = themeSettings.palette.primary.lightNavy;
-    const navyShadow = themeSettings.palette.primary.navyShadow;
-    const lightestNavy = themeSettings.palette.primary.lightestNavy;
     const lightSlate = themeSettings.palette.primary.lightSlate;
     const slate = themeSettings.palette.primary.slate;
     const white = themeSettings.palette.primary.white;
@@ -287,7 +284,7 @@ import {
             sx={{
               fontWeight: "bolder",
               fontSize: themeSettings.typography.h2,
-              color: white,
+              color: lightSlate,
             }}
           >
             About me

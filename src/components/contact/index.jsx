@@ -2,7 +2,6 @@ import {
     Box,
     Typography,
     Button,
-    Divider,
 } from "@mui/material";
 import { themeSettings } from "../../theme";
 import { attributes } from "../../pageAttributes";
@@ -12,11 +11,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 const Contact = () => {
     const theme = themeSettings;
     const darKnavy = theme.palette.primary.darkNavy;
-    const navy = theme.palette.primary.navy;
-    const lightnavy = theme.palette.primary.lightNavy;
-    const slate = theme.palette.primary.slate;
-    const lightSlate = theme.palette.primary.lightSlate;
-    const white = theme.palette.primary.white;
     const green = theme.palette.primary.green;
 
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
