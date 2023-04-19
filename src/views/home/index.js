@@ -106,7 +106,7 @@ import {
             >
               <Button
                 variant="outlined"
-                href={user.gitHub}
+                href={user.linkedIn}
                 target="_blank"
                 sx={{
                   color: lightSlate,

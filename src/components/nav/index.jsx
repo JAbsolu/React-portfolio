@@ -120,11 +120,20 @@ const Nav = () => {
                   background: darkNavy,
                   color: white,
                 }}>
-                  <ListItem 
+                  <Button 
                     textAlign="center"
+                    href={`#${page}`}
+                    sx={{
+                      color: lightSlate,
+                      textTransform: "none",
+                      "&:hover": {
+                        color: darkNavy,
+                        background: white,
+                      }
+                    }}
                   >
                     {page}
-                  </ListItem>
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
