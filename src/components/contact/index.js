@@ -45,6 +45,7 @@ const Contact = () => {
               <Typography sx={{
                   pb: "1.5rem",
                   textAlign: "center",
+                  fontWeight: "200",
               }}>
                   I am currently seeking an Entry-level or Apprenticeship role. Feel free to email me below.
               </Typography>
@@ -53,20 +54,17 @@ const Contact = () => {
               <Button 
                 variant="outlined"
                 size="large"
-                padding="1rem 2.5rem"
                 href="mailto:Johnson.absolu@outlook.com"
                 target="_new"
                 sx={{
                   color: green,
                   textTransform: "none",
                   mt: "1rem",
-                  fontSize: "1.1rem",
-                  fontWeight: "300",
+                  fontWeight: "200",
                 }}>
                   Send email
                   <SendIcon sx={{
                     ml: "0.7rem",
-                    p: "0.5rem  0",
                   }}/>
               </Button>
             </Box>

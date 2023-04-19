@@ -11,7 +11,7 @@ export const user = {
     email: `Johnson.absolu@outlook.com`,
     linkedIn : 'https://www.linkedin.com/in/johnson-absolu/',
     gitHub : 'https://github.com/JAbsolu',
-    userImage : userImg,
+    userImage : workspaceImg,
     resume: resume,
 };
 

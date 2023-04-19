@@ -97,6 +97,7 @@ import {
                 p: "2rem 0",
                 mb: "1rem",
                 color: slate,
+                fontWeight:"200"
               }}
             >
               Based in Connecticut, I'm a Front-end developer passionate about
@@ -319,13 +320,12 @@ import {
               sx={{
                 p: "1rem 0",
                 lineHeight: "1.7",
-                fontWeight: "300",
-                width: isNonMobile ? "85%" : null,
+                fontWeight: "200",
               }}
             >
               My name is Johnson Absolu, I enjoy creating responsive web
               applications. My interest in Frontend Development started in 2018,
-              after succesfuylly open an ecommerce website on shopify, I started
+              after succesfully open an ecommerce website on shopify, I started
               building ecommerce websites on shipify's drag and drop theme
               templates, I got very good at it and eventually started
               freelanching, helping others to develop and launch their own
@@ -334,25 +334,8 @@ import {
               Computer Science at Housatonic Community College, which I completed
               in May 2023.
             </Typography>
-          </Box>
-          {/* PROFILE PIC HERE */}
-          <Paper
-            sx={{
-              marginLeft: isNonMobile ? "2rem" : null,
-              background: navy,
-              border: `solid 5px ${lightSlate}`,
-              boxShadow: `-7px 6px 0px 0px ${green}`,
-              pb: "0",
-              mb: isMobile ? "2rem" : null,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img src={user.userImage} height="230" />
-          </Paper>
+          </Box>         
         </Box>
-        <Box></Box>
         {/* PROJECTS */}
 
         {/* CONTACT */}

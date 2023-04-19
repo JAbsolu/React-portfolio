@@ -32,6 +32,7 @@ const Footer = () => {
                 underline="none"
                 sx={{
                 fontSize: "0.85rem",
+                fontWeight: "200",
                 "&:hover" : {
                     color: green,
                     cursor: "pointer",
