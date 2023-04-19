@@ -1,16 +1,9 @@
 import {
     Box,
     Typography,
-    useTheme,
     useMediaQuery,
     Divider,
     Button,
-    Paper,
-    List,
-    ListItem,
-    ListItemAvatar,
-    Avatar,
-    ListItemText,
   } from "@mui/material";
   import HtmlIcon from "@mui/icons-material/Html";
   import CssIcon from "@mui/icons-material/Css";

@@ -10,7 +10,6 @@ const Footer = () => {
     const firstName = user.firstName;
     const lastName = user.lastName;
     const green = themeSettings.palette.primary.green;
-    const lightSlate = themeSettings.palette.primary.lightSlate;
     const white = themeSettings.palette.primary.white;
 
     const handleClick = () => {

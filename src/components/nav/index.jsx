@@ -18,7 +18,6 @@ import { themeSettings } from '../../theme';
 import { ListItem } from '@mui/material';
 
 const pages = ['About', 'Projects', "Contact"];
-const settings = ['Resume'];
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,11 +26,11 @@ const Nav = () => {
   const firstName = user.firstName;
   const lastName = user.lastName;
   const fullName = `${firstName} ${lastName}`;
-  const navy = themeSettings.palette.primary.navy;
   const darkNavy = themeSettings.palette.primary.darkNavy;
   const lightNavy = themeSettings.palette.primary.lightNavy;
   const lightSlate = themeSettings.palette.primary.lightSlate;
   const green = themeSettings.palette.primary.green;
+  const white = themeSettings.palette.primary.white;
   const themeFont = themeSettings.typography.fontFamily;
   // mediaquery
   const isNonMobile = useMediaQuery("(min-width: 1000px)"); 
@@ -51,7 +50,6 @@ const Nav = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
   
   return (
     <AppBar 
@@ -61,7 +59,7 @@ const Nav = () => {
       color: green,
       }}
     >
-      <Container maxWidth="100%">
+      <Container maxWidth="100%" sx={{p: "0"}}>
         <Toolbar disableGutters>
           <CodeIcon 
             sx={{ display: { xs: 'none', md: 'flex' },
@@ -95,6 +93,7 @@ const Nav = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{ pl: "0", }}
             >
               <MenuIcon />
             </IconButton>
@@ -117,7 +116,10 @@ const Nav = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{
+                  background: darkNavy,
+                  color: white,
+                }}>
                   <ListItem 
                     textAlign="center"
                   >
@@ -160,6 +162,7 @@ const Nav = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: lightSlate, display: 'block' }}
+                href={`#${page}`}
               >
                 {page}
               </Button>

@@ -50,7 +50,7 @@ const Contact = () => {
                   I am currently seeking an Entry-level or Apprenticeship role. Feel free to email me below.
               </Typography>
             </Box>
-            <Box>
+            <Box id={attributes.contact}>
               <Button 
                 variant="outlined"
                 size="large"
