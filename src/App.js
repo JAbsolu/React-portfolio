@@ -21,7 +21,7 @@ function App() {
         lineHeight: "2",
       }}
     >
-        <Nav />
+        {/* <Nav /> */}
         <Home />
     </Box>
   );

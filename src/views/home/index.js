@@ -26,7 +26,8 @@ import {
   import { projects } from "../../user";
   import { themeSettings } from "../../theme";
   import { attributes } from "../../pageAttributes";
-  
+  import Nav from "../../components/nav";
+
   const Home = () => {
     const green = themeSettings.palette.primary.green;
     const navy = themeSettings.palette.primary.navy;
@@ -47,12 +48,13 @@ import {
   
     return (
       <Box
-        p={isNonMobile ? "8rem 8rem 0" : "1rem 1rem 0"}
-        pt={isNonMobile ? "3rem " : "1rem"}
+        p={isNonMobile ? "0rem 8rem" : "0rem 1rem"}
         sx={{
           background: darkNavy,
         }}
       >
+        {/* NAV */}
+        <Nav />
         {/* INTRODUCTION */}
         <Box
           sx={{
@@ -185,7 +187,7 @@ import {
             <Box
               sx={{
                 pt: "3rem",
-                width: isNonMobile ? "100%" : null,
+                width: isNonMobile ? "90%" : null,
               }}
             >
               <FlexBetween>

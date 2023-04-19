@@ -59,14 +59,14 @@ const Nav = () => {
       sx={{
       background: darkNavy,
       color: green,
-      paddingLeft: isNonMobile ? "3rem" : null
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <CodeIcon 
             sx={{ display: { xs: 'none', md: 'flex' },
-            mr: 1,
+            mr: "0.5rem",
+            ml: "0",
             color: green
           }} />
           <Typography
