@@ -6,7 +6,8 @@ import { Box } from '@mui/material';
 import Home from './views/home';
 import Nav from './components/nav';
 import { themeSettings } from './theme';
-
+import { Analytics } from '@vercel/analytics/react'
+;
 function App() {
   const darkNavy = themeSettings.palette.primary.darkNavy;
   const lightSlate = themeSettings.palette.primary.lightSlate;
@@ -22,6 +23,7 @@ function App() {
       }}
     >
         <Home />
+        <Analytics />
     </Box>
   );
 }
