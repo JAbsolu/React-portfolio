@@ -5,6 +5,8 @@ import {
     Divider,
     Button,
   } from "@mui/material";
+  import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+  import LaunchIcon from '@mui/icons-material/Launch';
   import HtmlIcon from "@mui/icons-material/Html";
   import CssIcon from "@mui/icons-material/Css";
   import JavascriptIcon from "@mui/icons-material/Javascript";
@@ -20,6 +22,13 @@ import {
   import { themeSettings } from "../../theme";
   import { attributes } from "../../pageAttributes";
   import Nav from "../../components/nav";
+
+
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Projects from "../../components/Projects";
+
 
   const Home = () => {
     const green = themeSettings.palette.primary.green;
@@ -280,14 +289,13 @@ import {
           }}
         >
           <Typography
-            variant="h2"
+            variant="h4"
             sx={{
               fontWeight: "bolder",
-              fontSize: themeSettings.typography.h2,
               color: lightSlate,
             }}
           >
-            About me
+            About Me
           </Typography>
   
           <Divider
@@ -327,7 +335,14 @@ import {
           </Box>         
         </Box>
         {/* PROJECTS */}
-
+        <Typography variant="h4" sx={{
+          fontWeight: "bold",
+          mt: "7rem",
+          p: "1rem 0"
+        }}>
+          My Projects
+        </Typography>
+        <Projects />
         {/* CONTACT */}
         <Contact />
         <Divider
