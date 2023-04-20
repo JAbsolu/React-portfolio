@@ -335,13 +335,6 @@ import Projects from "../../components/Projects";
           </Box>         
         </Box>
         {/* PROJECTS */}
-        <Typography variant="h4" sx={{
-          fontWeight: "bold",
-          mt: "7rem",
-          p: "1rem 0"
-        }}>
-          My Projects
-        </Typography>
         <Projects />
         {/* CONTACT */}
         <Contact />
