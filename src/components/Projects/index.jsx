@@ -28,44 +28,53 @@ const Projects = () => {
     return (
         <Box sx={{
           mt: "5rem",
+          textAlign: "left",
         }}>
-          <Typography 
-            variant="h4"
-            id={attributes.projects}
-            sx={{
-            fontWeight: "bold",
-            pt: "1rem",
-            pb: "0",
-          }}>
-          My Projects
-        </Typography>
-        <Link
-                variant="a"
-                href="https://github.com/JAbsolu"
-                color={green} 
-                target="_blank"
-                rel="noopener noreferrer"
-                underline="none"
-                sx={{
-                fontSize: "0.75rem",
-                fontWeight: "200",
-                padding: "0",
-                margin: "0",
-                "&:hover" : {
-                    color: green,
-                    cursor: "pointer",
-                    textDecoration: "underline",
-                },
-               }}
-            >
-                View more on Github  
-            </Link>
           <Box sx={{
-              display: isIpad ? "block" : "flex",
+            display: "flex",
+            alignItems: "end",
+            gap: "5px",
+          }}>
+            <Typography 
+              variant="h4"
+              id={attributes.projects}
+              sx={{
+              fontWeight: "bold",
+              pt: "1rem",
+              pb: "0",
+            }}>
+            My Projects
+            </Typography>
+            <Link
+                  variant="a"
+                  href="https://github.com/JAbsolu"
+                  color={green} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  underline="none"
+                  sx={{
+                  fontSize: "0.75rem",
+                  fontWeight: "200",
+                  padding: "0",
+                  margin: "0",
+                  "&:hover" : {
+                      color: green,
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                  },
+                 }}
+              >
+                  View more on Github  
+            </Link>
+          </Box>
+          
+          <Box sx={{
+              display: "flex",
               gap: "1rem",
-              pb: "1rem",
+              pb: "2rem",
               flexWrap: "wrap",
-              // overflowX: "scroll",
+              justifyContent: isMobile ? "center" : null,
+              alignItems: "center",
             }}>
               {/* CARD 1 */}
               <Link
@@ -74,8 +83,9 @@ const Projects = () => {
                 target="_new"
               >
               <Card sx={{
-                minWidth: '18rem',
-                maxWidth: "21rem",
+                minWidth: '20rem',
+                maxWidth: "22rem",
+                minHeight: "19rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -149,8 +159,9 @@ const Projects = () => {
                 underline="none"
               >
               <Card sx={{
-                minWidth: '18rem',
-                maxWidth: "21rem",
+                minWidth: '20rem',
+                maxWidth: "22rem",
+                minHeight: "19rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -225,8 +236,9 @@ const Projects = () => {
                 underline="none"
               >
               <Card sx={{
-                minWidth: '18rem',
-                maxWidth: "21rem",
+                minWidth: '20rem',
+                maxWidth: "22rem",
+                minHeight: "19rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -301,8 +313,9 @@ const Projects = () => {
                 underline="none"
               >
             <Card sx={{
-              minWidth: '18rem',
-              maxWidth: "21rem",
+              minWidth: '20rem',
+              maxWidth: "22rem",
+              minHeight: "19rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
@@ -377,8 +390,9 @@ const Projects = () => {
                 underline="none"
               >
             <Card sx={{
-              minWidth: '18rem',
-              maxWidth: "21rem",
+              minWidth: '20rem',
+              maxWidth: "22rem",
+              minHeight: "19rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
@@ -453,8 +467,9 @@ const Projects = () => {
                 underline="none"
               >
              <Card sx={{
-              minWidth: '18rem',
-              maxWidth: "21rem",
+              minWidth: '20rem',
+              maxWidth: "22rem",
+              minHeight: "19rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
