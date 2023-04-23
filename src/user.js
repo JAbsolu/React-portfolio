@@ -39,5 +39,26 @@ export const projects = {
         technology: ['HTML', 'CSS', 'Javascript'],
         description: 'A multi-page ecommerce website that allows users to view a product and add to cart.',
     },
+    socialMediaApp: {
+        name: 'Social Media App',
+        frontendView : null,
+        github: 'https://github.com/JAbsolu/FullStack-Social-app',
+        technology: ['React', 'Redux', 'Node JS', 'MongoDb'],
+        description: 'A Fullstack social media website, it allows users to signup/signin and add friends.',
+    },
+    leasePaymentCal: {
+        name: 'Lease Payment Calculator',
+        frontendView: null,
+        github: 'https://github.com/JAbsolu/lease-payment-calculator',
+        technology: ['PHP', 'HTML', 'Bootstrap' , 'CSS'],
+        description: 'A one page web app that helps calculate car lease payment',
+    },
+    calculator: {
+        name: "Javascript calculator",
+        frontendView: null,
+        github: null,
+        technology: ['HTML', 'CSS', 'Javascript'],
+        description: 'A javascript calculator that allows users to calculate',
+    },
 };
 
