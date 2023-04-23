@@ -308,12 +308,13 @@ import Projects from "../../components/Projects";
   
         {/* ABOUT ME TEXT */}
         <Box
+          id={attributes.about}
           sx={{
             width: isNonMobile ? "90%" : null,
             display: isMobile ? "block" : "flex",
           }}
         >
-          <Box id={attributes.about}>
+          <Box>
             <Typography
               sx={{
                 p: "1rem 0",

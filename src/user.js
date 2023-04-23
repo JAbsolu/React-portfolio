@@ -55,8 +55,8 @@ export const projects = {
     },
     calculator: {
         name: "Javascript calculator",
-        frontendView: null,
-        github: null,
+        frontendView: 'https://jscalculator-ruby.vercel.app/',
+        github: 'https://github.com/JAbsolu/Javascript-calculator',
         technology: ['HTML', 'CSS', 'Javascript'],
         description: 'A javascript calculator that allows users to calculate',
     },

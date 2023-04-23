@@ -7,11 +7,13 @@ import {
   } from "@mui/material";
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import LaunchIcon from '@mui/icons-material/Launch';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import FlexBetween from "../flexBetween";
 import { themeSettings } from "../../theme";
 import { projects } from "../../user";
+import { attributes } from "../../pageAttributes";
 
 
 const Projects = () => {
@@ -27,7 +29,10 @@ const Projects = () => {
         <Box sx={{
           mt: "5rem",
         }}>
-          <Typography variant="h4" sx={{
+          <Typography 
+            variant="h4"
+            id={attributes.projects}
+            sx={{
             fontWeight: "bold",
             pt: "1rem",
             pb: "0",
@@ -62,6 +67,11 @@ const Projects = () => {
               overflowX: "scroll",
             }}>
               {/* CARD 1 */}
+              <Link
+                href={projects.todo.frontendView}
+                underline="none"
+                target="_new"
+              >
               <Card sx={{
                 minWidth: '22rem',
                 maxWidth: "24rem",
@@ -73,7 +83,11 @@ const Projects = () => {
                   p: "2rem",
                 }}>
                   <FlexBetween>
-                    <FolderOpenIcon sx={{
+                    <Link
+                      href={projects.todo.github}
+                      target="_new"
+                    >
+                    <GitHubIcon sx={{
                       color: lightSlate,
                       fontSize: "1.8rem",
                       "&:hover": {
@@ -81,6 +95,7 @@ const Projects = () => {
                         cursor: "pointer",
                       },
                     }}/>
+                    </Link>
                     <LaunchIcon sx={{
                       color: lightSlate,
                       fontSize: "1.8rem",
@@ -125,7 +140,13 @@ const Projects = () => {
                   </FlexBetween>
                 </CardContent>
               </Card>
+              </Link>
               {/* CARD 2 */}
+              <Link
+                href={projects.ecommerceApp.frontendView}
+                target="_new"
+                underline="none"
+              >
               <Card sx={{
                 minWidth: '22rem',
                 maxWidth: "24rem",
@@ -137,14 +158,20 @@ const Projects = () => {
                   p: "2rem",
                 }}>
                   <FlexBetween>
-                    <FolderOpenIcon sx={{
-                      color: lightSlate,
-                      fontSize: "1.8rem",
-                      "&:hover": {
-                        color: green,
-                        cursor: 'pointer',
-                      },
-                    }}/>
+                  <Link
+                      href={projects.ecommerceApp.github}
+                      target="_new"
+                      underline="none"
+                    >
+                      <GitHubIcon sx={{
+                        color: lightSlate,
+                        fontSize: "1.8rem",
+                        "&:hover": {
+                          color: green,
+                          cursor: "pointer",
+                        },
+                      }}/>
+                    </Link>
                     <LaunchIcon sx={{
                       color: lightSlate,
                       fontSize: "1.8rem",
@@ -189,7 +216,13 @@ const Projects = () => {
                   </FlexBetween>
                 </CardContent>
               </Card>
+              </Link>
               {/* CARD 3 */}
+              <Link
+                href={projects.ErApp.frontendView}
+                target="_new"
+                underline="none"
+              >
               <Card sx={{
                 minWidth: '22rem',
                 maxWidth: "24rem",
@@ -201,14 +234,19 @@ const Projects = () => {
                   p: "2rem",
                 }}>
                   <FlexBetween>
-                    <FolderOpenIcon sx={{
-                      color: lightSlate,
-                      fontSize: "1.8rem",
-                      "&:hover": {
-                        color: green,
-                        cursor: 'pointer',
-                      },
-                    }}/>
+                  <Link
+                      href={projects.ErApp.github}
+                      target="_new"
+                    >
+                      <GitHubIcon sx={{
+                        color: lightSlate,
+                        fontSize: "1.8rem",
+                        "&:hover": {
+                          color: green,
+                          cursor: "pointer",
+                        },
+                      }}/>
+                    </Link>
                     <LaunchIcon sx={{
                       color: lightSlate,
                       fontSize: "1.8rem",
@@ -253,6 +291,7 @@ const Projects = () => {
                   </FlexBetween>
                 </CardContent>
               </Card>
+              </Link>
             </Box>
             {/* ROW 2 */}
             <Box sx={{
@@ -263,6 +302,11 @@ const Projects = () => {
             }}>
             
             {/* CARD 1 */}
+            <Link
+                href={projects.leasePaymentCal.frontendView}
+                target="_new"
+                underline="none"
+              >
             <Card sx={{
               minWidth: '22rem',
               maxWidth: "24rem",
@@ -274,14 +318,19 @@ const Projects = () => {
                 p: "2rem",
               }}>
                 <FlexBetween>
-                  <FolderOpenIcon sx={{
-                    color: lightSlate,
-                    fontSize: "1.8rem",
-                    "&:hover": {
-                      color: green,
-                      cursor: 'pointer',
-                    },
-                  }}/>
+                <Link
+                      href={projects.leasePaymentCal.github}
+                      target="_new"
+                    >
+                      <GitHubIcon sx={{
+                        color: lightSlate,
+                        fontSize: "1.8rem",
+                        "&:hover": {
+                          color: green,
+                          cursor: "pointer",
+                        },
+                      }}/>
+                    </Link>
                   <LaunchIcon sx={{
                     color: lightSlate,
                     fontSize: "1.8rem",
@@ -326,8 +375,14 @@ const Projects = () => {
                 </FlexBetween>
               </CardContent>
             </Card>
+            </Link>
 
             {/* CARD 2 */}
+            <Link
+                href={projects.calculator.frontendView}
+                target="_new"
+                underline="none"
+              >
             <Card sx={{
               minWidth: '22rem',
               maxWidth: "24rem",
@@ -339,14 +394,19 @@ const Projects = () => {
                 p: "2rem",
               }}>
                 <FlexBetween>
-                  <FolderOpenIcon sx={{
-                    color: lightSlate,
-                    fontSize: "1.8rem",
-                    "&:hover": {
-                      color: green,
-                      cursor: 'pointer',
-                    },
-                  }}/>
+                <Link
+                      href={projects.calculator.github}
+                      target="_new"
+                    >
+                      <GitHubIcon sx={{
+                        color: lightSlate,
+                        fontSize: "1.8rem",
+                        "&:hover": {
+                          color: green,
+                          cursor: "pointer",
+                        },
+                      }}/>
+                    </Link>
                   <LaunchIcon sx={{
                     color: lightSlate,
                     fontSize: "1.8rem",
@@ -391,8 +451,14 @@ const Projects = () => {
                 </FlexBetween>
               </CardContent>
             </Card>
+            </Link>
 
              {/* CARD 3 */}
+             <Link
+                href={projects.socialMediaApp.frontendView}
+                target="_new"
+                underline="none"
+              >
              <Card sx={{
               minWidth: '22rem',
               maxWidth: "24rem",
@@ -404,14 +470,19 @@ const Projects = () => {
                 p: "2rem",
               }}>
                 <FlexBetween>
-                  <FolderOpenIcon sx={{
-                    color: lightSlate,
-                    fontSize: "1.8rem",
-                    "&:hover": {
-                      color: green,
-                      cursor: 'pointer',
-                    },
-                  }}/>
+                <Link
+                      href={projects.socialMediaApp.github}
+                      target="_new"
+                    >
+                      <GitHubIcon sx={{
+                        color: lightSlate,
+                        fontSize: "1.8rem",
+                        "&:hover": {
+                          color: green,
+                          cursor: "pointer",
+                        },
+                      }}/>
+                    </Link>
                   <LaunchIcon sx={{
                     color: lightSlate,
                     fontSize: "1.8rem",
@@ -456,6 +527,8 @@ const Projects = () => {
                 </FlexBetween>
               </CardContent>
             </Card>
+            </Link>
+
             </Box>
           </Box>
     );
