@@ -74,8 +74,8 @@ const Projects = () => {
                 target="_new"
               >
               <Card sx={{
-                minWidth: '22rem',
-                maxWidth: "24rem",
+                minWidth: '18rem',
+                maxWidth: "21rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -149,8 +149,8 @@ const Projects = () => {
                 underline="none"
               >
               <Card sx={{
-                minWidth: '22rem',
-                maxWidth: "24rem",
+                minWidth: '18rem',
+                maxWidth: "21rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -225,8 +225,8 @@ const Projects = () => {
                 underline="none"
               >
               <Card sx={{
-                minWidth: '22rem',
-                maxWidth: "24rem",
+                minWidth: '18rem',
+                maxWidth: "21rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -301,8 +301,8 @@ const Projects = () => {
                 underline="none"
               >
             <Card sx={{
-              minWidth: '22rem',
-              maxWidth: "24rem",
+              minWidth: '18rem',
+              maxWidth: "21rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
@@ -377,8 +377,8 @@ const Projects = () => {
                 underline="none"
               >
             <Card sx={{
-              minWidth: '22rem',
-              maxWidth: "24rem",
+              minWidth: '18rem',
+              maxWidth: "21rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
@@ -453,8 +453,8 @@ const Projects = () => {
                 underline="none"
               >
              <Card sx={{
-              minWidth: '22rem',
-              maxWidth: "24rem",
+              minWidth: '18rem',
+              maxWidth: "21rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",

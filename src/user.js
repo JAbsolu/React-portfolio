@@ -44,7 +44,7 @@ export const projects = {
         frontendView : null,
         github: 'https://github.com/JAbsolu/FullStack-Social-app',
         technology: ['React', 'Redux', 'Node JS', 'MongoDb'],
-        description: 'A Fullstack social media website, it allows users to signup/signin and add friends.',
+        description: 'A Fullstack social media website, allows users to signup/signin and add friends.',
     },
     leasePaymentCal: {
         name: 'Lease Payment Calculator',
