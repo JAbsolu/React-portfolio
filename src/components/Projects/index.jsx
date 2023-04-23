@@ -64,7 +64,8 @@ const Projects = () => {
               display: isIpad ? "block" : "flex",
               gap: "1rem",
               pb: "1rem",
-              overflowX: "scroll",
+              flexWrap: "wrap",
+              // overflowX: "scroll",
             }}>
               {/* CARD 1 */}
               <Link
@@ -292,16 +293,8 @@ const Projects = () => {
                 </CardContent>
               </Card>
               </Link>
-            </Box>
-            {/* ROW 2 */}
-            <Box sx={{
-              display: isIpad ? "block" : "flex",
-              gap: "1rem",
-              pb: "4rem",
-              overflowX: "scroll",
-            }}>
-            
-            {/* CARD 1 */}
+          
+            {/* CARD 4 */}
             <Link
                 href={projects.leasePaymentCal.frontendView}
                 target="_new"
@@ -377,7 +370,7 @@ const Projects = () => {
             </Card>
             </Link>
 
-            {/* CARD 2 */}
+            {/* CARD 5 */}
             <Link
                 href={projects.calculator.frontendView}
                 target="_new"
@@ -453,7 +446,7 @@ const Projects = () => {
             </Card>
             </Link>
 
-             {/* CARD 3 */}
+             {/* CARD 6 */}
              <Link
                 href={projects.socialMediaApp.frontendView}
                 target="_new"
@@ -528,7 +521,6 @@ const Projects = () => {
               </CardContent>
             </Card>
             </Link>
-
             </Box>
           </Box>
     );
