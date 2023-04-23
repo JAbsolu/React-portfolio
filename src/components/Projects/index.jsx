@@ -58,13 +58,13 @@ const Projects = () => {
           <Box sx={{
               display: isIpad ? "block" : "flex",
               gap: "1rem",
-              pb: "4rem",
+              pb: "1rem",
               overflowX: "scroll",
             }}>
               {/* CARD 1 */}
               <Card sx={{
-                minWidth: '20rem',
-                maxWidth: "22rem",
+                minWidth: '22rem',
+                maxWidth: "24rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -127,8 +127,8 @@ const Projects = () => {
               </Card>
               {/* CARD 2 */}
               <Card sx={{
-                minWidth: '20rem',
-                maxWidth: "22rem",
+                minWidth: '22rem',
+                maxWidth: "24rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -191,8 +191,8 @@ const Projects = () => {
               </Card>
               {/* CARD 3 */}
               <Card sx={{
-                minWidth: '20rem',
-                maxWidth: "22rem",
+                minWidth: '22rem',
+                maxWidth: "24rem",
                 background: navy,
                 borderRadius: "5px",
                 mt: "1rem",
@@ -254,7 +254,7 @@ const Projects = () => {
                 </CardContent>
               </Card>
             </Box>
-{/* ROW 2 */}
+            {/* ROW 2 */}
             <Box sx={{
               display: isIpad ? "block" : "flex",
               gap: "1rem",
@@ -264,8 +264,8 @@ const Projects = () => {
             
             {/* CARD 1 */}
             <Card sx={{
-              minWidth: '20rem',
-              maxWidth: "22rem",
+              minWidth: '22rem',
+              maxWidth: "24rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
@@ -329,8 +329,8 @@ const Projects = () => {
 
             {/* CARD 2 */}
             <Card sx={{
-              minWidth: '20rem',
-              maxWidth: "22rem",
+              minWidth: '22rem',
+              maxWidth: "24rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
@@ -394,8 +394,8 @@ const Projects = () => {
 
              {/* CARD 3 */}
              <Card sx={{
-              minWidth: '20rem',
-              maxWidth: "22rem",
+              minWidth: '22rem',
+              maxWidth: "24rem",
               background: navy,
               borderRadius: "5px",
               mt: "1rem",
