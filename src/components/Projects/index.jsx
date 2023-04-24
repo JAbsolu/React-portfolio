@@ -34,6 +34,7 @@ const Projects = () => {
             display: "flex",
             alignItems: "end",
             gap: "5px",
+            mb: "2rem",
           }}>
             <Typography 
               variant="h4"
@@ -41,7 +42,6 @@ const Projects = () => {
               sx={{
               fontWeight: "bold",
               pt: "1rem",
-              pb: "0",
             }}>
             My Projects
             </Typography>
@@ -83,12 +83,12 @@ const Projects = () => {
                 target="_new"
               >
               <Card sx={{
-                minWidth: '20rem',
-                maxWidth: "22rem",
+                minWidth: '22rem',
+                maxWidth: "24rem",
                 minHeight: "19rem",
                 background: navy,
                 borderRadius: "5px",
-                mt: "1rem",
+                mt: "5px",
               }}>
                 <CardContent sx={{
                   p: "2rem",
@@ -159,12 +159,12 @@ const Projects = () => {
                 underline="none"
               >
               <Card sx={{
-                minWidth: '20rem',
-                maxWidth: "22rem",
+                minWidth: '22rem',
+                maxWidth: "24rem",
                 minHeight: "19rem",
                 background: navy,
                 borderRadius: "5px",
-                mt: "1rem",
+                mt: "5px",
               }}>
                 <CardContent sx={{
                   p: "2rem",
@@ -236,12 +236,12 @@ const Projects = () => {
                 underline="none"
               >
               <Card sx={{
-                minWidth: '20rem',
-                maxWidth: "22rem",
+                minWidth: '22rem',
+                maxWidth: "24rem",
                 minHeight: "19rem",
                 background: navy,
                 borderRadius: "5px",
-                mt: "1rem",
+                mt: "5px",
               }}>
                 <CardContent sx={{
                   p: "2rem",
@@ -313,12 +313,12 @@ const Projects = () => {
                 underline="none"
               >
             <Card sx={{
-              minWidth: '20rem',
-              maxWidth: "22rem",
+              minWidth: '22rem',
+              maxWidth: "24rem",
               minHeight: "19rem",
               background: navy,
               borderRadius: "5px",
-              mt: "1rem",
+              mt: "5px",
             }}>
               <CardContent sx={{
                 p: "2rem",
@@ -390,12 +390,11 @@ const Projects = () => {
                 underline="none"
               >
             <Card sx={{
-              minWidth: '20rem',
-              maxWidth: "22rem",
+              minWidth: '22rem',
+              maxWidth: "24rem",
               minHeight: "19rem",
               background: navy,
               borderRadius: "5px",
-              mt: "1rem",
             }}>
               <CardContent sx={{
                 p: "2rem",
@@ -467,12 +466,11 @@ const Projects = () => {
                 underline="none"
               >
              <Card sx={{
-              minWidth: '20rem',
-              maxWidth: "22rem",
+              minWidth: '22rem',
+              maxWidth: "24rem",
               minHeight: "19rem",
               background: navy,
               borderRadius: "5px",
-              mt: "1rem",
             }}>
               <CardContent sx={{
                 p: "2rem",
