@@ -87,7 +87,7 @@ import Projects from "../../components/Projects";
                   color: slate,
                 }}
               >
-                I'm a Developer focusing on the Frontend.
+                I'm a Frontend Developer.
               </Typography>
             </Typography>
   
@@ -322,16 +322,7 @@ import Projects from "../../components/Projects";
                 fontWeight: "200",
               }}
             >
-              My name is Johnson Absolu, I enjoy creating responsive web
-              applications. My interest in Frontend Development started in 2018,
-              after succesfully open an ecommerce website on shopify, I started
-              building ecommerce websites on shipify's drag and drop theme
-              templates, I got very good at it and eventually started
-              freelanching, helping others to develop and launch their own
-              ecommerce website. In 2020 I began learning how to ceate basic web
-              apps on FreeCode camp, then I started my Associate Degree in
-              Computer Science at Housatonic Community College, which I completed
-              in May 2023.
+             I'm Johnson Absolu and I'm passionate about building responsive web applications. My interest in frontend development was sparked in 2018 when I successfully launched an ecommerce website on Shopify. I then gained expertise in building ecommerce sites on Shopify and started freelancing, assisting others in launching their own online stores. In 2020, I began learning to create basic web apps on FreeCode Camp. I later pursued an associate degree in computer science at Housatonic Community College, which I completed in May 2023.
             </Typography>
           </Box>         
         </Box>
