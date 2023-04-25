@@ -41,7 +41,8 @@ const Contact = () => {
                   textAlign: "center",
                   fontWeight: "200",
               }}>
-                  I am currently seeking an Entry-level or Apprenticeship role. Feel free to email me below.
+                  I am actively looking for an Entry-level or Apprenticeship opportunity, 
+                  Please do not hesitate to email me using the link below regarding potential positions.
               </Typography>
             </Box>
             <Box id={attributes.contact}>
