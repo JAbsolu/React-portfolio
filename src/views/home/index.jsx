@@ -87,7 +87,7 @@ import Projects from "../../components/Projects";
                   color: slate,
                 }}
               >
-                I'm a Frontend Developer.
+                I'm A Frontend Developer.
               </Typography>
             </Typography>
   
