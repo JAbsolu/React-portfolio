@@ -320,13 +320,14 @@ import Projects from "../../components/Projects";
                 fontWeight: "200",
               }}
             >
-             I'm Johnson Absolu and I'm passionate about building responsive web applications. 
-             My interest in frontend development was sparked in 2018 when I successfully launched 
-             an ecommerce website on Shopify. I then gained expertise in building ecommerce sites 
-             on Shopify and started freelancing, assisting others in launching their own online stores. 
-             In 2020, I began learning to create basic web apps on FreeCode Camp. 
-             After that, I enrolled in an associate degree program in computer science at Housatonic 
-             Community College, and I am on track to graduate in May 2023.
+              I'm Johnson Absolu, a passionate frontend software engineer specializing 
+              n building responsive web applications. Currently enrolled in a bachelor's 
+              degree program in computer science at Central Connecticut State University, 
+              my journey in frontend development began in 2018 when I successfully launched 
+              an ecommerce website on Shopify. Since then, I have honed my skills in building 
+              ecommerce sites on Shopify and ventured into freelancing, helping individuals 
+              launch their online stores. In 2020, I embarked on a learning path with FreeCode Camp, 
+              where I acquired the knowledge to create basic web apps.
             </Typography>
           </Box>         
         </Box>
