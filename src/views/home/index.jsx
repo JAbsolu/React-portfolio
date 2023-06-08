@@ -321,7 +321,7 @@ import Projects from "../../components/Projects";
               }}
             >
               I'm Johnson Absolu, a passionate Front-end software engineer specializing 
-              n building responsive web applications. Currently enrolled in a bachelor's 
+              in building responsive web applications. Currently enrolled in a bachelor's 
               degree program in computer science at Central Connecticut State University, 
               my journey in front-end development began in 2018 when I successfully launched 
               an ecommerce website on Shopify. Since then, I have honed my skills in building 
