@@ -85,7 +85,7 @@ import Projects from "../../components/Projects";
                   color: slate,
                 }}
               >
-                I'm A Frontend Developer.
+                I'm A Front-end Software Engineer.
               </Typography>
             </Typography>
   
@@ -97,7 +97,7 @@ import Projects from "../../components/Projects";
                 fontWeight:"200"
               }}
             >
-              Based in Connecticut, I'm a Front-end developer passionate about
+              Based in Connecticut, I'm a Front-end Software Engineer passionate about
               building accessible web apps that users love.
             </Typography>
   
@@ -320,10 +320,10 @@ import Projects from "../../components/Projects";
                 fontWeight: "200",
               }}
             >
-              I'm Johnson Absolu, a passionate frontend software engineer specializing 
+              I'm Johnson Absolu, a passionate Front-end software engineer specializing 
               n building responsive web applications. Currently enrolled in a bachelor's 
               degree program in computer science at Central Connecticut State University, 
-              my journey in frontend development began in 2018 when I successfully launched 
+              my journey in front-end development began in 2018 when I successfully launched 
               an ecommerce website on Shopify. Since then, I have honed my skills in building 
               ecommerce sites on Shopify and ventured into freelancing, helping individuals 
               launch their online stores. In 2020, I embarked on a learning path with FreeCode Camp, 
