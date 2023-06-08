@@ -5,8 +5,6 @@ import {
     Divider,
     Button,
   } from "@mui/material";
-  import FolderOpenIcon from '@mui/icons-material/FolderOpen';
-  import LaunchIcon from '@mui/icons-material/Launch';
   import HtmlIcon from "@mui/icons-material/Html";
   import CssIcon from "@mui/icons-material/Css";
   import JavascriptIcon from "@mui/icons-material/Javascript";
