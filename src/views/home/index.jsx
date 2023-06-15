@@ -42,7 +42,7 @@ import Projects from "../../components/Projects";
   
     return (
       <Box
-        p={isNonMobile ? "0rem 6rem" : "0rem 1rem"}
+        p={isNonMobile ? "0rem 3.5rem" : "0rem 1rem"}
         sx={{
           background: darkNavy,
         }}
