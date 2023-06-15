@@ -7,6 +7,7 @@ import { themeSettings } from "../../theme";
 import { attributes } from "../../pageAttributes";
 import SendIcon from '@mui/icons-material/Send';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { WebsiteTexts } from "../../user";
 
 const Contact = () => {
     const theme = themeSettings;
@@ -41,8 +42,8 @@ const Contact = () => {
                   textAlign: "center",
                   fontWeight: "200",
               }}>
-                  I am actively looking for an Entry-level or Apprenticeship opportunity, 
-                  Please do not hesitate to email me using the link below regarding potential positions.
+                  {/* CONTACT MESSAGE */}
+                  {WebsiteTexts.Status_not_searching};
               </Typography>
             </Box>
             <Box id={attributes.contact}>
