@@ -15,12 +15,11 @@ import {
   import FlexBetween from "../../components/flexBetween";
   import Contact from "../../components/contact";
   import Footer from "../../components/footer";
-  import { user } from "../../user";
+  import { WebsiteTexts, user } from "../../user";
   import { projects } from "../../user";
   import { themeSettings } from "../../theme";
   import { attributes } from "../../pageAttributes";
   import Nav from "../../components/nav";
-
 
 import Card from '@mui/material/Card';
 import Projects from "../../components/Projects";
@@ -83,7 +82,8 @@ import Projects from "../../components/Projects";
                   color: slate,
                 }}
               >
-                I'm A Front-end Software Engineer.
+                {/* WEBSITE TITLE TEXT */}
+                {WebsiteTexts.title}
               </Typography>
             </Typography>
   
@@ -95,8 +95,8 @@ import Projects from "../../components/Projects";
                 fontWeight:"200"
               }}
             >
-              Based in Connecticut, I'm a Front-end Software Engineer passionate about
-              building accessible web apps that users love.
+              {/* WEBSITE SUBTITLE TEXT */}
+              {WebsiteTexts.subtitle}
             </Typography>
   
             {/* CALL TO ACTION BUTTONS */}
@@ -318,14 +318,8 @@ import Projects from "../../components/Projects";
                 fontWeight: "200",
               }}
             >
-              I'm Johnson Absolu, a passionate Front-end software engineer specializing 
-              in building responsive web applications. Currently enrolled in a bachelor's 
-              degree program in computer science at Central Connecticut State University, 
-              my journey in front-end development began in 2018 when I successfully launched 
-              an ecommerce website on Shopify. Since then, I have honed my skills in building 
-              ecommerce sites on Shopify and ventured into freelancing, helping individuals 
-              launch their online stores. In 2020, I embarked on a learning path with FreeCode Camp, 
-              where I acquired the knowledge to create basic web apps.
+              {/* WEBSITTE ABOUT ME TEXT */}
+              {WebsiteTexts.about}
             </Typography>
           </Box>         
         </Box>
