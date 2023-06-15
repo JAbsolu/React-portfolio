@@ -7,6 +7,7 @@ import Home from './views/home';
 import Nav from './components/nav';
 import { themeSettings } from './theme';
 import { Analytics } from '@vercel/analytics/react'
+
 ;
 function App() {
   const darkNavy = themeSettings.palette.primary.darkNavy;
@@ -22,6 +23,7 @@ function App() {
         lineHeight: "2",
       }}
     >
+        <Nav />
         <Home />
         <Analytics />
     </Box>

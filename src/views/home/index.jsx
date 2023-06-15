@@ -47,8 +47,7 @@ import Projects from "../../components/Projects";
           background: darkNavy,
         }}
       >
-        {/* NAV */}
-        <Nav />
+        
         {/* INTRODUCTION */}
         <Box
           sx={{
