@@ -43,7 +43,7 @@ const Contact = () => {
                   fontWeight: "200",
               }}>
                   {/* CONTACT MESSAGE */}
-                  {WebsiteTexts.Status_not_searching};
+                  {WebsiteTexts.Status_not_searching}
               </Typography>
             </Box>
             <Box id={attributes.contact}>

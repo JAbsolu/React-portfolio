@@ -27,7 +27,7 @@ export const WebsiteTexts = {
     Status_searching: `I am actively looking for an Entry-level or Apprenticeship opportunity, 
     Please do not hesitate to email me using the link below regarding potential positions.`,
     Status_not_searching: `Hi there! I'm always open to having a conversation with like-minded people, 
-    Feel free to send me an email :).`
+    Feel free to send me an email.`
 }
 
 
