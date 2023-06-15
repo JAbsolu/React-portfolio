@@ -26,8 +26,8 @@ const ProjectCards = () => {
       <Link href={frontend} underline="none" target="_new">
         <Card
           sx={{
-            minWidth: "22rem",
-            maxWidth: "24rem",
+            minWidth: "20rem",
+            maxWidth: "22rem",
             minHeight: "19rem",
             background: navy,
             borderRadius: "5px",
