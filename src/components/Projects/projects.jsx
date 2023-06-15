@@ -5,69 +5,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import FlexBetween from "../flexBetween";
 import { themeSettings } from "../../theme";
-
-const projects = [
-  {
-    name: "React Todo List Application",
-    frontendView: "https://todo-blond-theta.vercel.app/",
-    github: "https://github.com/JAbsolu/Todo-app",
-    technology: ["Javascript", "React Js", "CSS"],
-    description:
-      "A single page application that allows users to add tasks to a list to be completed.",
-  },
-  {
-    name: "Emergency Response App",
-    frontendView: "https://emergency-response-app.vercel.app/",
-    github: "https://github.com/JAbsolu/Emergency-response-app",
-    technology: ["Javascript", "React Js", "Sass", "CSS", "Bootstrap"],
-    description:
-      "A 4 page web application that allows users to login and request emergency assistance.",
-  },
-  {
-    name: "Ecommerce Website",
-    frontendView: "https://jabsolu.github.io/sneaker-web-app/",
-    github: "https://github.com/JAbsolu/sneaker-web-app",
-    technology: ["HTML", "CSS", "Javascript"],
-    description:
-      "A multi-page ecommerce website that allows users to view a product and add to cart.",
-  },
-  {
-    name: "Social Media App",
-    frontendView: null,
-    github: "https://github.com/JAbsolu/FullStack-Social-app",
-    technology: ["React", "Redux", "Node JS", "MongoDb"],
-    description:
-      "A Fullstack social media website, allows users to signup/signin and add friends.",
-  },
-  {
-    name: "Lease Payment Calculator",
-    frontendView: null,
-    github: "https://github.com/JAbsolu/lease-payment-calculator",
-    technology: ["PHP", "HTML", "Bootstrap", "CSS"],
-    description: "A one page web app that helps calculate car lease payment",
-  },
-  {
-    name: "Javascript calculator",
-    frontendView: "https://jscalculator-ruby.vercel.app/",
-    github: "https://github.com/JAbsolu/Javascript-calculator",
-    technology: ["HTML", "CSS", "Javascript"],
-    description: "A javascript calculator that allows users to calculate",
-  },
-  {
-    name: "Full-Stack Dealership Website",
-    frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
-    github: "https://github.com/JAbsolu/Serverside-programing-Final-Project",
-    technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
-    description: "A Full-stack dealership website with a MySQL database",
-  },
-  {
-    name: "A List of My Leetcode Solutions",
-    frontendView: "https://github.com/JAbsolu/Leetcode-Solutions",
-    github: "https://github.com/JAbsolu/Leetcode-Solutions",
-    technology: ["Javascript", "Python"],
-    description: "A list of my leetcode solutions. I add new solutions daily",
-  },
-];
+import { projects } from "../../user";
 
 const ProjectCards = () => {
   const green = themeSettings.palette.primary.green;
