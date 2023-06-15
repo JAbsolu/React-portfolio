@@ -7,15 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import CodeIcon from '@mui/icons-material/Code';
-import { useMediaQuery } from '@mui/material';
-import { user } from '../../user';
+import { user } from '../../assets';
 import { themeSettings } from '../../theme';
-import { ListItem } from '@mui/material';
 
 const pages = ['About', 'Projects', "Contact"];
 
@@ -32,9 +28,6 @@ const Nav = () => {
   const green = themeSettings.palette.primary.green;
   const white = themeSettings.palette.primary.white;
   const themeFont = themeSettings.typography.fontFamily;
-  // mediaquery
-  const isNonMobile = useMediaQuery("(min-width: 1000px)"); 
-  const isMobile = useMediaQuery("(max-width: 600px)")
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

@@ -5,7 +5,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import FlexBetween from "../flexBetween";
 import { themeSettings } from "../../theme";
-import { projects } from "../../user";
+import { projects } from "../../assets";
 
 const ProjectCards = () => {
   const green = themeSettings.palette.primary.green;

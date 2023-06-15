@@ -2,7 +2,7 @@ import {
     Box
 } from "@mui/material";
 import Link from '@mui/material/Link';
-import { user } from "../../user";
+import { user } from "../../assets";
 import { themeSettings } from "../../theme";
 
 

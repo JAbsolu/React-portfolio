@@ -79,17 +79,17 @@ export const projects = [
       description: "A javascript calculator that allows users to calculate",
     },
     {
-      name: "Full-Stack Dealership Website",
+      name: "Full-Stack Dealership Application",
       frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
       github: "https://github.com/JAbsolu/Serverside-programing-Final-Project",
       technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
-      description: "A Full-stack dealership website with a MySQL database",
+      description: "A Full-stack car dealership website with a MySQL database",
     },
     {
-      name: "A List of My Leetcode Solutions",
+      name: "My Leetcode Solutions",
       frontendView: "https://github.com/JAbsolu/Leetcode-Solutions",
       github: "https://github.com/JAbsolu/Leetcode-Solutions",
       technology: ["Javascript", "Python"],
-      description: "A list of my leetcode solutions. I add new solutions daily",
+      description: "A list of my leetcode solutions. New solutions are added weekly",
     },
   ];

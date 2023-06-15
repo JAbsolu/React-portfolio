@@ -7,7 +7,7 @@ import { themeSettings } from "../../theme";
 import { attributes } from "../../pageAttributes";
 import SendIcon from '@mui/icons-material/Send';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { WebsiteTexts } from "../../user";
+import { WebsiteTexts } from "../../assets";
 
 const Contact = () => {
     const theme = themeSettings;

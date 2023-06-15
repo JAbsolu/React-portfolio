@@ -5,23 +5,19 @@ import {
     Divider,
     Button,
   } from "@mui/material";
-  import HtmlIcon from "@mui/icons-material/Html";
-  import CssIcon from "@mui/icons-material/Css";
-  import JavascriptIcon from "@mui/icons-material/Javascript";
-  import PhpIcon from "@mui/icons-material/Php";
-  import JoinLeftIcon from "@mui/icons-material/JoinLeft";
-  import TerminalIcon from "@mui/icons-material/Terminal";
-  import { GitHub, LinkedIn, DownloadOutlined } from "@mui/icons-material";
-  import FlexBetween from "../../components/flexBetween";
-  import Contact from "../../components/contact";
-  import Footer from "../../components/footer";
-  import { WebsiteTexts, user } from "../../user";
-  import { projects } from "../../user";
-  import { themeSettings } from "../../theme";
-  import { attributes } from "../../pageAttributes";
-  import Nav from "../../components/nav";
-
-import Card from '@mui/material/Card';
+import HtmlIcon from "@mui/icons-material/Html";
+import CssIcon from "@mui/icons-material/Css";
+import JavascriptIcon from "@mui/icons-material/Javascript";
+import PhpIcon from "@mui/icons-material/Php";
+import JoinLeftIcon from "@mui/icons-material/JoinLeft";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import { GitHub, LinkedIn, DownloadOutlined } from "@mui/icons-material";
+import FlexBetween from "../../components/flexBetween";
+import Contact from "../../components/contact";
+import Footer from "../../components/footer";
+import { WebsiteTexts, user } from "../../assets";
+import { themeSettings } from "../../theme";
+import { attributes } from "../../pageAttributes";
 import Projects from "../../components/Projects";
 
 
