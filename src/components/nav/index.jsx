@@ -86,7 +86,7 @@ const Nav = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              sx={{ pl: "0", }}
+              sx={{ pl: ".5rem", }}
             >
               <MenuIcon />
             </IconButton>

@@ -5,9 +5,12 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import FlexBetween from "../flexBetween";
 import { themeSettings } from "../../theme";
+import { useMediaQuery } from "@mui/material";
 import { projects } from "../../assets";
 
 const ProjectCards = () => {
+  const isMac = useMediaQuery("(min-width: 1400px)");
+
   const green = themeSettings.palette.primary.green;
   const navy = themeSettings.palette.primary.navy;
   const lightSlate = themeSettings.palette.primary.lightSlate;
@@ -26,8 +29,8 @@ const ProjectCards = () => {
       <Link href={frontend} underline="none" target="_new">
         <Card
           sx={{
-            minWidth: "21rem",
-            maxWidth: "22rem",
+            minWidth: isMac ? "24rem" : "19rem",
+            maxWidth: isMac ? "26rem" : "22.5rem",
             minHeight: "19rem",
             background: navy,
             borderRadius: "5px",
