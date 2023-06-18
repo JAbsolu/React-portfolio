@@ -57,7 +57,7 @@ export const projects = [
         "A multi-page ecommerce website that allows users to view a product and add to cart.",
     },
     {
-      name: "Social Media App",
+      name: "MERN Social Media App",
       frontendView: null,
       github: "https://github.com/JAbsolu/FullStack-Social-app",
       technology: ["React", "Redux", "Node JS", "MongoDb"],
