@@ -69,7 +69,7 @@ export const projects = [
       frontendView: null,
       github: "https://github.com/JAbsolu/lease-payment-calculator",
       technology: ["PHP", "HTML", "Bootstrap", "CSS"],
-      description: "A one page web app that helps calculate car lease payment",
+      description: "A one page web app that helps calculate car lease payment. Used in the Fullstack dealership project.",
     },
     {
       name: "Javascript calculator",
