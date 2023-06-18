@@ -130,6 +130,7 @@ const Nav = () => {
                 </MenuItem>
               ))}
             </Menu>
+            {/* WEB MENU */}
           </Box>
           <CodeIcon 
             sx={{ 
@@ -158,6 +159,7 @@ const Nav = () => {
           >
             {fullName}
           </Typography>
+          {/* MENU ITEMS COTAINER */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button

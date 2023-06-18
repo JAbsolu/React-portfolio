@@ -11,7 +11,7 @@ export const user = {
 
 export const WebsiteTexts = {
     title : `I'm a Software Engineer`,
-    subtitle: `Based in Connecticut, I'm a Front-end Software 
+    subtitle: `Based in Connecticut, I'm a Software 
     Engineer passionate about building accessible web apps that users love.`,
     about: `I'm Johnson Absolu, a passionate Front-end software 
     engineer specializing in building responsive web applications. 
