@@ -35,6 +35,7 @@ import Projects from "../../components/Projects";
     const firstName = user.firstName;
     const lastName = user.lastName;
     const fullName = `${firstName} ${lastName}`;
+    const resume_link = user.resume_link;
   
     return (
       <Box
@@ -151,7 +152,7 @@ import Projects from "../../components/Projects";
   
               <Button
                 variant="outlined"
-                href={user.resume}
+                href={resume_link}
                 target="_blank"
                 sx={{
                   color: lightSlate,

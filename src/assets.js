@@ -7,6 +7,7 @@ export const user = {
     linkedIn : 'https://www.linkedin.com/in/johnson-absolu/',
     gitHub : 'https://github.com/JAbsolu',
     resume: resume,
+    resume_link: 'https://docs.google.com/document/d/14AgccEyegdBXLOeDIboGAvlOPZfbZEixp7mgm4C2kro/edit',
 };
 
 export const WebsiteTexts = {
