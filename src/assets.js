@@ -87,7 +87,7 @@ export const projects = [
       description: "A Full-stack car dealership website with a MySQL database",
     },
     {
-      name: "My Leetcode Solutions",
+      name: "Leetcode Solutions",
       frontendView: "https://github.com/JAbsolu/Leetcode-Solutions",
       github: "https://github.com/JAbsolu/Leetcode-Solutions",
       technology: ["Javascript", "Python"],
