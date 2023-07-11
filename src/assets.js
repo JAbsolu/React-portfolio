@@ -82,9 +82,16 @@ export const projects = [
     {
       name: "Full-Stack Dealership Application",
       frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
-      github: "https://github.com/JAbsolu/Serverside-programing-Final-Project",
+      github: "https://github.com/JAbsolu/Serverside-programing-Final-Project]",
       technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
-      description: "A Full-stack car dealership website with a MySQL database",
+      description: "A Full-stack car dealership app with a MySQL database",
+    },
+    {
+      name: "Weather App",
+      frontendView: "https://htweather.vercel.app/",
+      github: "https://github.com/JAbsolu/weather-app",
+      technology: ["React", "Open weather API", "Material UI"],
+      description: "A weather app that allows users to check weather in any city.",
     },
     {
       name: "Leetcode Solutions",
