@@ -90,8 +90,8 @@ export const projects = [
       name: "Weather App",
       frontendView: "https://htweather.vercel.app/",
       github: "https://github.com/JAbsolu/weather-app",
-      technology: ["React", "Open weather API", "Material UI"],
-      description: "A weather app that allows users to check weather in any city.",
+      technology: ["React", "Weather API", "Geolocation API" , "Material UI"],
+      description: "A weather application with weather and geolocation API, allowing users to get weather info based on their live location.",
     },
     {
       name: "Leetcode Solutions",
