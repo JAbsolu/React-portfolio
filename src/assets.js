@@ -34,12 +34,41 @@ export const WebsiteTexts = {
 
 export const projects = [
     {
+      name: "Weather App",
+      frontendView: "https://htweather.vercel.app/",
+      github: "https://github.com/JAbsolu/weather-app",
+      technology: ["React", "Weather API", "Geolocation API" , "Material UI"],
+      description: "A weather application with weather and geolocation API, allowing users to get weather info based on their live location.",
+    },
+    {
+      name: "Full-Stack Dealership Application",
+      frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
+      github: "https://github.com/JAbsolu/Serverside-programing-Final-Project]",
+      technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
+      description: "A Full-stack car dealership app with a MySQL database",
+    },
+    {
       name: "React Todo List Application",
       frontendView: "https://todo-blond-theta.vercel.app/",
       github: "https://github.com/JAbsolu/Todo-app",
       technology: ["Javascript", "React Js", "CSS"],
       description:
         "A single page application that allows users to add tasks to a list to be completed.",
+    },
+    {
+      name: "MERN Social Media App",
+      frontendView: null,
+      github: "https://github.com/JAbsolu/FullStack-Social-app",
+      technology: ["React", "Redux", "Node JS", "MongoDb"],
+      description:
+        "A Fullstack social media website, allows users to signup/signin and add friends.",
+    },
+    {
+      name: "Javascript calculator",
+      frontendView: "https://jscalculator-ruby.vercel.app/",
+      github: "https://github.com/JAbsolu/Javascript-calculator",
+      technology: ["HTML", "CSS", "Javascript"],
+      description: "A javascript calculator that allows users to calculate",
     },
     {
       name: "Emergency Response App",
@@ -58,40 +87,11 @@ export const projects = [
         "A multi-page ecommerce website that allows users to view a product and add to cart.",
     },
     {
-      name: "MERN Social Media App",
-      frontendView: null,
-      github: "https://github.com/JAbsolu/FullStack-Social-app",
-      technology: ["React", "Redux", "Node JS", "MongoDb"],
-      description:
-        "A Fullstack social media website, allows users to signup/signin and add friends.",
-    },
-    {
       name: "Lease Payment Calculator",
       frontendView: null,
       github: "https://github.com/JAbsolu/lease-payment-calculator",
       technology: ["PHP", "HTML", "Bootstrap", "CSS"],
       description: "A one page web app that helps calculate car lease payment. Used in the Fullstack dealership project.",
-    },
-    {
-      name: "Javascript calculator",
-      frontendView: "https://jscalculator-ruby.vercel.app/",
-      github: "https://github.com/JAbsolu/Javascript-calculator",
-      technology: ["HTML", "CSS", "Javascript"],
-      description: "A javascript calculator that allows users to calculate",
-    },
-    {
-      name: "Full-Stack Dealership Application",
-      frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
-      github: "https://github.com/JAbsolu/Serverside-programing-Final-Project]",
-      technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
-      description: "A Full-stack car dealership app with a MySQL database",
-    },
-    {
-      name: "Weather App",
-      frontendView: "https://htweather.vercel.app/",
-      github: "https://github.com/JAbsolu/weather-app",
-      technology: ["React", "Weather API", "Geolocation API" , "Material UI"],
-      description: "A weather application with weather and geolocation API, allowing users to get weather info based on their live location.",
     },
     {
       name: "Leetcode Solutions",
