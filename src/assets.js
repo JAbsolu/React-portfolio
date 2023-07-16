@@ -64,6 +64,14 @@ export const projects = [
         "A Fullstack social media website, allows users to signup/signin and add friends.",
     },
     {
+      name: "Socially Immersed",
+      frontendView: "https://socially-immersed-challenge.vercel.app/",
+      github: "https://github.com/JAbsolu/Socially-immersed-challenge",
+      technology: ["React", "Bootstrap"],
+      description:`A hackaton challenge. Task was to create frontend in 9 hours, 
+      when backend is implemented, users should be able to register/sign in and join communities.`,
+    },
+    {
       name: "Javascript calculator",
       frontendView: "https://jscalculator-ruby.vercel.app/",
       github: "https://github.com/JAbsolu/Javascript-calculator",
