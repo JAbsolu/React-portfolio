@@ -68,8 +68,8 @@ export const projects = [
       frontendView: "https://socially-immersed-challenge.vercel.app/",
       github: "https://github.com/JAbsolu/Socially-immersed-challenge",
       technology: ["React", "Bootstrap"],
-      description:`A hackaton challenge. Task was to create frontend in 9 hours, 
-      when backend is implemented, users should be able to register/sign in and join communities.`,
+      description:`A hackaton challenge. currently in progress, when backend is implemented, users 
+      should be able to register for anccount, sign in and interact with communities.`,
     },
     {
       name: "Javascript calculator",
