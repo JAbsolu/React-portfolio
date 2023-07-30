@@ -43,7 +43,7 @@ export const projects = [
     {
       name: "Full-Stack Dealership Application",
       frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
-      github: "https://github.com/JAbsolu/Serverside-programing-Final-Project]",
+      github: "https://github.com/JAbsolu/Serverside-programing-Final-Project",
       technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
       description: "A Full-stack car dealership app with a MySQL database",
     },
