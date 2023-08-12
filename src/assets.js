@@ -34,7 +34,7 @@ export const WebsiteTexts = {
 
 export const projects = [
   {
-    name: "Full-Stack Team and Task Manager App",
+    name: "Team and Task Manager App",
     frontendView: null,
     github: "https://github.com/JAbsolu/Team-management-app",
     technology: ["React JS", "Node JS", "Mongodb", "Express", "Mongoose" , "Material UI"],
