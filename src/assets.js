@@ -37,8 +37,8 @@ export const projects = [
     name: "Team and Task Manager App",
     frontendView: null,
     github: "https://github.com/JAbsolu/Team-management-app",
-    technology: ["React JS", "Node JS", "Mongodb", "Express", "Mongoose" , "Material UI"],
-    description: "A team and task manager app, that allows teams to colloborate, assigns tasks based on their respective levels.",
+    technology: ["React JS", "Node JS", "Mongodb", "Express" , "Material UI"],
+    description: "A MERN Stack team and task manager app, that allows teams to colloborate, assigns tasks based on their respective levels.",
   },
     {
       name: "Weather App",
