@@ -19,7 +19,7 @@ const Projects = () => {
         }}
       >
         <Typography
-          variant="h4"
+          variant={ isMobile ? "h5" : "h4" }
           id={attributes.projects}
           sx={{
             fontWeight: "bold",
