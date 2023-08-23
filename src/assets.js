@@ -1,4 +1,4 @@
-import resume from './assets/Resume.pdf';
+import resume from './media/Resume.pdf'
 
 export const user = {
     firstName : 'Johnson',

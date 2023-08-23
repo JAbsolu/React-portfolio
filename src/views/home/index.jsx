@@ -18,6 +18,7 @@ import Footer from "../../components/footer";
 import { WebsiteTexts, user } from "../../assets";
 import { themeSettings } from "../../theme";
 import { attributes } from "../../pageAttributes";
+import illustration from '../../media/MERN.png';
 import Projects from "../../components/Projects";
 
 
@@ -54,128 +55,143 @@ import Projects from "../../components/Projects";
           }}
         >
           <Box>
-            <Typography
-              paddingLeft={isNonMobile ? "5px" : null}
-              color={green}
+            {/* FLEXBOX */}
+            <Box
               sx={{
-                wordSpacing: "2px",
-                mb: "0.5rem",
+                display: "flex",
+                flexWrap: "wrap",
+                flexDirection: isMobile ? "column-reverse" : "",
+                justifyContent: isNonMobile ? "start" : isWideScreen ? "space-between" : "",
+                alignItems: "center",
+                gap: isNonMobile ? "19rem" : isWideScreen ? "0" : "",
               }}
             >
-              Hi, my name is
-            </Typography>
-            <Typography
-              variant={isMobile ? "h4" : "h2"}
-              color={white}
-              sx={{
-                fontWeight: "bolder",
-              }}
-            >
-              {`${fullName}.`}
-              <Typography
-                variant={isMobile ? "h5" : "h3"}
-                sx={{
-                  fontWeight: "bolder",
-                  color: slate,
-                }}
-              >
-                {/* WEBSITE TITLE TEXT */}
-                {WebsiteTexts.title}
-              </Typography>
-            </Typography>
-  
-            <Typography
-              sx={{
-                p: isMobile ? "1rem 0" : "2rem 0",
-                mb: "1rem",
-                color: slate,
-                fontWeight:"200"
-              }}
-            >
-              {/* WEBSITE SUBTITLE TEXT */}
-              {WebsiteTexts.subtitle}
-            </Typography>
-  
-            {/* CALL TO ACTION BUTTONS */}
-            <FlexBetween
-              sx={{
-                gap: "1rem",
-                maxWidth: isNonMobile ? "25rem" : "20rem",
-              }}
-            >
-              <Button
-                variant="outlined"
-                href={user.linkedIn}
-                target="_blank"
-                sx={{
-                  color: lightSlate,
-                  textTransform: "none",
-                  "&:hover": {
-                    color: green,
-                  },
-                }}
-              >
-                <LinkedIn
+              <Box sx={{ mt: isMobile ? "2rem" : "" }}>
+                <Typography
+                  paddingLeft={isNonMobile ? "5px" : null}
+                  color={green}
                   sx={{
-                    color: lightSlate,
-                    p: "4px",
-                    "&:hover": {
-                      color: green,
-                    },
+                    wordSpacing: "2px",
+                    mb: "0.5rem",
                   }}
-                />
-                Linkedin
-              </Button>
-  
-              <Button
-                variant="outlined"
-                href={user.gitHub}
-                target="_blank"
-                sx={{
-                  color: lightSlate,
-                  textTransform: "none",
-                  "&:hover": {
-                    color: green,
-                  },
-                }}
-              >
-                <GitHub
+                >
+                  Hi, my name is
+                </Typography>
+                <Typography
+                  variant={isMobile ? "h4" : "h2"}
+                  color={white}
                   sx={{
-                    color: lightSlate,
-                    p: "4px",
-                    "&:hover": {
-                      color: green,
-                    },
+                    fontWeight: "bolder",
                   }}
-                />
-                Github
-              </Button>
-  
-              <Button
-                variant="outlined"
-                href={isNonMobile ? resume_link : resume}
-                target="_blank"
-                sx={{
-                  color: lightSlate,
-                  textTransform: "none",
-                  "&:hover": {
-                    color: green,
-                  },
-                }}
-              >
-                <DownloadOutlined
+                >
+                  {`${fullName}.`}
+                  <Typography
+                    variant={isMobile ? "h5" : "h3"}
+                    sx={{
+                      fontWeight: "bolder",
+                      color: slate,
+                    }}
+                  >
+                    {/* WEBSITE TITLE TEXT */}
+                    {WebsiteTexts.title}
+                  </Typography>
+                </Typography>
+      
+                <Typography
                   sx={{
-                    color: lightSlate,
-                    p: "4px",
-                    "&:hover": {
-                      color: green,
-                    },
+                    p: isMobile ? "1rem 0" : "2rem 0",
+                    mb: "1rem",
+                    color: slate,
+                    fontWeight:"200"
                   }}
-                />
-                Resume
-              </Button>
-            </FlexBetween>
-  
+                >
+                  {/* WEBSITE SUBTITLE TEXT */}
+                  {WebsiteTexts.subtitle}
+                </Typography>
+              {/* CALL TO ACTION BUTTONS */}
+                <FlexBetween
+                  sx={{
+                    gap: "1rem",
+                    maxWidth: isNonMobile ? "25rem" : "20rem",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    href={user.linkedIn}
+                    target="_blank"
+                    sx={{
+                      color: lightSlate,
+                      textTransform: "none",
+                      "&:hover": {
+                        color: green,
+                      },
+                    }}
+                  >
+                    <LinkedIn
+                      sx={{
+                        color: lightSlate,
+                        p: "4px",
+                        "&:hover": {
+                          color: green,
+                        },
+                      }}
+                    />
+                    Linkedin
+                  </Button>
+      
+                  <Button
+                    variant="outlined"
+                    href={user.gitHub}
+                    target="_blank"
+                    sx={{
+                      color: lightSlate,
+                      textTransform: "none",
+                      "&:hover": {
+                        color: green,
+                      },
+                    }}
+                  >
+                    <GitHub
+                      sx={{
+                        color: lightSlate,
+                        p: "4px",
+                        "&:hover": {
+                          color: green,
+                        },
+                      }}
+                    />
+                    Github
+                  </Button>
+      
+                  <Button
+                    variant="outlined"
+                    href={isNonMobile ? resume_link : resume}
+                    target="_blank"
+                    sx={{
+                      color: lightSlate,
+                      textTransform: "none",
+                      "&:hover": {
+                        color: green,
+                      },
+                    }}
+                  >
+                    <DownloadOutlined
+                      sx={{
+                        color: lightSlate,
+                        p: "4px",
+                        "&:hover": {
+                          color: green,
+                        },
+                      }}
+                    />
+                    Resume
+                  </Button>
+                </FlexBetween>
+              </Box>
+              {/* FLEX RIGHT, APPEARS FIRST ON MOBILE VIEWING */}
+              <img src={illustration} width={ isMobile ? "380" : "550"}/>  
+            </Box>
+
             {/* TECHONOLOGIES */}
             <Box
               sx={{
