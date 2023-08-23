@@ -282,7 +282,7 @@ import Projects from "../../components/Projects";
           }}
         >
           <Typography
-            variant={isMobile ? "h5" : "h4"}
+            variant={isMobile ? "h6" : "h4"}
             sx={{
               fontWeight: "bolder",
               color: lightSlate,
