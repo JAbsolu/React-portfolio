@@ -62,7 +62,7 @@ import Projects from "../../components/Projects";
                 flexWrap: "wrap",
                 flexDirection: isMobile ? "column-reverse" : "",
                 justifyContent: isNonMobile ? "start" : isWideScreen ? "space-between" : "",
-                alignItems: "center",
+                alignItems: "start",
                 gap: isNonMobile ? "19rem" : isWideScreen ? "0" : "",
               }}
             >
@@ -189,7 +189,7 @@ import Projects from "../../components/Projects";
                 </FlexBetween>
               </Box>
               {/* FLEX RIGHT, APPEARS FIRST ON MOBILE VIEWING */}
-              <img src={illustration} width={ isMobile ? "380" : "550"}/>  
+              <img src={illustration} width={ isMobile ? "380" : "500"}/>  
             </Box>
 
             {/* TECHONOLOGIES */}
