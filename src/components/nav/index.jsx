@@ -12,12 +12,14 @@ import MenuItem from '@mui/material/MenuItem';
 import CodeIcon from '@mui/icons-material/Code';
 import { user } from '../../assets';
 import { themeSettings } from '../../theme';
+import { useMediaQuery } from '@mui/material';
 
 const pages = ['About', 'Projects', "Contact"];
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const isWideScreen = useMediaQuery("(min-width: 2000px)");
 
   const firstName = user.firstName;
   const lastName = user.lastName;
@@ -48,11 +50,12 @@ const Nav = () => {
     <AppBar 
       position="static" 
       sx={{
-      background: darkNavy,
-      color: green,
+        background: darkNavy,
+        color: green,
+        p: isWideScreen ? "0 15rem"  : "0",
       }}
     >
-      <Container maxWidth="100%" sx={{p: "0"}}>
+      <Container maxWidth="100%" sx={{ p: "0"}}>
         <Toolbar disableGutters>
           <CodeIcon 
             sx={{ display: { xs: 'none', md: 'flex' },

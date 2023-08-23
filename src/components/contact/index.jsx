@@ -15,19 +15,20 @@ const Contact = () => {
     const green = theme.palette.primary.green;
 
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
+    const isMobile = useMediaQuery("(max-width: 600px)");
 
     return (
         <Box id={attributes.contact} sx={{
             background: darKnavy,
             textAlign: "center",
-            mt: "7rem",
+            mt: isMobile ? "4rem" : "7rem",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center"
         }}>
             <Box>
-              <Typography variant="h3" sx={{
+              <Typography variant={ isMobile ? "h4" : "h3" } sx={{
                   fontWeight: "bolder",
                   mb: "1rem",
               }}>
@@ -50,7 +51,7 @@ const Contact = () => {
               <Button 
                 variant="outlined"
                 size="large"
-                href="mailto:Johnson.absolu@outlook.com"
+                href="mailto:Johnson.absolu@hotmail.com"
                 target="_new"
                 sx={{
                   color: green,

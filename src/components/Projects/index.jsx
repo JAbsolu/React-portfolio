@@ -13,17 +13,19 @@ const Projects = () => {
       <Box
         sx={{
           display: "flex",
+          justifyContent: isMobile ? "space-between" : "start",
           alignItems: "end",
-          gap: "5px",
-          mb: "2rem",
+          gap: isMobile ? "" : "0.3rem",
+          padding: isMobile ? "0 0.85rem" : "" ,
+          mb: "1rem",
         }}
       >
         <Typography
-          variant={ isMobile ? "h5" : "h4" }
+          variant={ isMobile ? "h6" : "h4" }
           id={attributes.projects}
           sx={{
             fontWeight: "bold",
-            pt: "1rem",
+            pt: "0.5rem",
           }}
         >
           My Projects

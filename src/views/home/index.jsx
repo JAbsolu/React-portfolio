@@ -29,6 +29,7 @@ import Projects from "../../components/Projects";
     const slate = themeSettings.palette.primary.slate;
     const white = themeSettings.palette.primary.white;
   
+    const isWideScreen = useMediaQuery("(min-width: 2000px)");
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
     const isMobile = useMediaQuery("(max-width: 700px)");
   
@@ -40,7 +41,7 @@ import Projects from "../../components/Projects";
   
     return (
       <Box
-        p={isNonMobile ? "0rem 3.5rem" : "0rem 1rem"}
+        p={ isWideScreen ? "0rem 15rem" : isNonMobile ? "0rem 3.5rem" : "0rem 1rem"}
         sx={{
           background: darkNavy,
         }}
@@ -54,12 +55,11 @@ import Projects from "../../components/Projects";
         >
           <Box>
             <Typography
-              // variant=""
               paddingLeft={isNonMobile ? "5px" : null}
               color={green}
               sx={{
                 wordSpacing: "2px",
-                mb: "1rem",
+                mb: "0.5rem",
               }}
             >
               Hi, my name is
@@ -73,7 +73,7 @@ import Projects from "../../components/Projects";
             >
               {`${fullName}.`}
               <Typography
-                variant="h3"
+                variant={isMobile ? "h5" : "h3"}
                 sx={{
                   fontWeight: "bolder",
                   color: slate,
@@ -86,7 +86,7 @@ import Projects from "../../components/Projects";
   
             <Typography
               sx={{
-                p: "2rem 0",
+                p: isMobile ? "1rem 0" : "2rem 0",
                 mb: "1rem",
                 color: slate,
                 fontWeight:"200"
@@ -282,7 +282,7 @@ import Projects from "../../components/Projects";
           }}
         >
           <Typography
-            variant="h4"
+            variant={isMobile ? "h5" : "h4"}
             sx={{
               fontWeight: "bolder",
               color: lightSlate,
@@ -290,13 +290,6 @@ import Projects from "../../components/Projects";
           >
             About Me
           </Typography>
-  
-          <Divider
-            sx={{
-              background: lightSlate,
-              width: "40%",
-            }}
-          />
         </Box>
   
         {/* ABOUT ME TEXT */}
