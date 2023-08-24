@@ -21,15 +21,15 @@ export const themeSettings = {
       fontSize: 12,
       h1: {
         fontFamily: ["Rubik", "sans-serif"].join(","),
-        fontSize: 40,
+        fontSize: 37,
       },
       h2: {
         fontFamily: ["Rubik", "sans-serif"].join(","),
-        fontSize: 32,
+        fontSize: 28,
       },
       h3: {
         fontFamily: ["Rubik", "sans-serif"].join(","),
-        fontSize: 24,
+        fontSize: 23,
       },
       h4: {
         fontFamily: ["Rubik", "sans-serif"].join(","),

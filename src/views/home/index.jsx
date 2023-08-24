@@ -60,10 +60,9 @@ import Projects from "../../components/Projects";
               sx={{
                 display: "flex",
                 flexWrap: "wrap",
-                flexDirection: isMobile ? "column-reverse" : "",
-                justifyContent: isNonMobile ? "start" : isWideScreen ? "space-between" : "",
+                flexDirection: isMobile ? "column-reverse" : "flex",
+                justifyContent: "space-between",
                 alignItems: "start",
-                gap: isNonMobile ? "19rem" : isWideScreen ? "0" : "",
               }}
             >
               <Box sx={{ mt: isMobile ? "2rem" : "" }}>
@@ -189,7 +188,9 @@ import Projects from "../../components/Projects";
                 </FlexBetween>
               </Box>
               {/* FLEX RIGHT, APPEARS FIRST ON MOBILE VIEWING */}
-              <img src={illustration} width={ isMobile ? "380" : "500"}/>  
+              <Box sx={{ m: "0 auto 1rem"}}>
+                <img src={illustration} width={ isMobile ? "300" : "500" }/>  
+              </Box>
             </Box>
 
             {/* TECHONOLOGIES */}
@@ -300,7 +301,7 @@ import Projects from "../../components/Projects";
           <Typography
             variant={isMobile ? "h6" : "h4"}
             sx={{
-              fontWeight: "bolder",
+              fontWeight: "500",
               color: lightSlate,
             }}
           >
@@ -320,7 +321,7 @@ import Projects from "../../components/Projects";
             <Typography
               sx={{
                 p: "1rem 0",
-                lineHeight: "1.7",
+                lineHeight: "1.8",
                 fontWeight: "200",
               }}
             >

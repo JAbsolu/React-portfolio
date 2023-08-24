@@ -15,7 +15,7 @@ const Projects = () => {
           display: "flex",
           justifyContent: isMobile ? "space-between" : "start",
           alignItems: "end",
-          gap: isMobile ? "" : "0.3rem",
+          gap: isMobile ? "" : "0.8rem",
           padding: isMobile ? "0 0.85rem" : "" ,
           mb: "1rem",
         }}
@@ -24,7 +24,7 @@ const Projects = () => {
           variant={ isMobile ? "h6" : "h4" }
           id={attributes.projects}
           sx={{
-            fontWeight: "bold",
+            fontWeight: "500",
             pt: "0.5rem",
           }}
         >
