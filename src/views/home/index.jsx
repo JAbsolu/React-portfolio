@@ -189,7 +189,7 @@ import Projects from "../../components/Projects";
               </Box>
               {/* FLEX RIGHT, APPEARS FIRST ON MOBILE VIEWING */}
               <Box sx={{ m: "0 auto 1rem"}}>
-                <img src={illustration} width={ isMobile ? "300" : "500" }/>  
+                <img src={illustration} width={ isMobile ? "350" : "500" }/>  
               </Box>
             </Box>
 
