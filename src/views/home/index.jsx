@@ -188,7 +188,7 @@ import Projects from "../../components/Projects";
                 </FlexBetween>
               </Box>
               {/* FLEX RIGHT, APPEARS FIRST ON MOBILE VIEWING */}
-              <Box sx={{ m: "0 auto 1rem"}}>
+              <Box sx={{ m: isMobile ? "0 auto 2rem" : "" }}>
                 <img src={illustration} width={ isMobile ? "350" : "500" }/>  
               </Box>
             </Box>
