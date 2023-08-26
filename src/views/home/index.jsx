@@ -42,7 +42,7 @@ import Projects from "../../components/Projects";
   
     return (
       <Box
-        p={ isWideScreen ? "0rem 15rem" : isNonMobile ? "0rem 3.5rem" : "0rem 1rem"}
+        p={ isWideScreen ? "0rem 15rem" : isNonMobile ? "0rem 2rem" : "0rem 1rem"}
         sx={{
           background: darkNavy,
         }}
@@ -189,7 +189,7 @@ import Projects from "../../components/Projects";
                 </FlexBetween>
               </Box>
               {/* FLEX RIGHT, APPEARS FIRST ON MOBILE VIEWING */}
-              <Box sx={{ m: isMobile ? "0 auto 2rem" : "0 auto"}}>
+              <Box sx={{ m: isMobile ? "0 auto 2rem" : "0 11rem 0 0"}}>
                 <img src={illustration} width={ isMobile ? "350" : "450" }/>  
               </Box>
             </Box>
