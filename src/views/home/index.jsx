@@ -101,7 +101,8 @@ import Projects from "../../components/Projects";
                     p: isMobile ? "1rem 0" : "2rem 0",
                     mb: "1rem",
                     color: slate,
-                    fontWeight:"200"
+                    fontWeight:"200",
+                    maxWidth: "33rem",
                   }}
                 >
                   {/* WEBSITE SUBTITLE TEXT */}
