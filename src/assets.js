@@ -44,7 +44,7 @@ export const projects = [
     name: "Team and Task Manager App",
     frontendView: null,
     github: "https://github.com/JAbsolu/Team-management-app",
-    technology: ["React JS", "Node JS", "Mongodb", "Express" , "Material UI"],
+    technology: ["React JS", "Node JS", "Mongodb", "Express JS" , "MUI"],
     description: "A MERN Stack team and task manager app, that allows teams to colloborate, assigns tasks based on their respective levels.",
   },
     {
