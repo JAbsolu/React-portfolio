@@ -54,7 +54,7 @@ export const projects = [
     },
     {
       name: "Full-Stack Dealership Application",
-      frontendView: "https://csc269-01.hcc-computerscience.com/php-project/",
+      frontendView: null,
       github: "https://github.com/JAbsolu/Serverside-programing-Final-Project",
       technology: ["PHP", "MySQL", "Bootstrap", "Hack"],
       description: "A Full-stack car dealership app with a MySQL database",
@@ -74,14 +74,6 @@ export const projects = [
       technology: ["React", "Redux", "Node JS", "MongoDb"],
       description:
         "A Fullstack social media website, allows users to signup/signin and add friends.",
-    },
-    {
-      name: "Socially Immersed",
-      frontendView: "https://socially-immersed-challenge.vercel.app/",
-      github: "https://github.com/JAbsolu/Socially-immersed-challenge",
-      technology: ["React", "Bootstrap"],
-      description:`A Hackaton social media app challenge. It will allow users 
-      to register for acct, sign in and interact with communities.`,
     },
     {
       name: "Javascript calculator",
