@@ -11,7 +11,7 @@ export const user = {
 };
 
 export const WebsiteTexts = {
-    title : `I'm a Software Developer based in Connecticut`,
+    title : `I'm a Software Developer Based in Connecticut`,
     subtitle: `I'm a Software Developer passionate about building accessible web apps that users love.`,
     about: `I'm a passionate Software 
             Developer specializing in building responsive web applications. 
