@@ -1,23 +1,23 @@
 import resume from './media/Resume.pdf'
 
 export const user = {
-    firstName : 'Johnson',
+    firstName : 'John',
     lastName : 'Absolu',
-    email: `Johnson.absolu@outlook.com`,
-    linkedIn : 'https://www.linkedin.com/in/johnson-absolu/',
+    email: `Johnson.absolu@hotmail.com`,
+    linkedIn : 'https://www.linkedin.com/in/john-absolu',
     gitHub : 'https://github.com/JAbsolu',
     resume: resume,
     resume_link: 'https://docs.google.com/document/d/1LspAuIfg0M5dhneRBVivC50eu9UN_bvtml2YcFrZjTY/edit?usp=sharing',
 };
 
 export const WebsiteTexts = {
-    title : `I'm a Software Engineer`,
-    subtitle: `Based in Connecticut, I'm a Software Engineer passionate about building accessible web apps that users love.`,
-    about: `I'm Johnson Absolu, a passionate Front-end software 
-            engineer specializing in building responsive web applications. 
+    title : `I'm a Software Developer based in Connecticut`,
+    subtitle: `I'm a Software Developer passionate about building accessible web apps that users love.`,
+    about: `I'm a passionate Software 
+            Developer specializing in building responsive web applications. 
             Currently enrolled in a bachelor's degree program in computer 
             science at Southern Connecticut State University, my journey 
-            in front-end development began in 2018 when I successfully 
+            in Web and Software Development began in 2018 when I successfully 
             launched an ecommerce website on Shopify. Since then, I have 
             honed my skills in building ecommerce sites on Shopify and 
             ventured into freelancing, helping individuals launch their 
@@ -25,7 +25,7 @@ export const WebsiteTexts = {
             FreeCodeCamp, where I acquired the knowledge to create basic websites using HTML, CSS and Javascript.`,
     Status_searching: `I am actively looking for an Entry-level or Apprenticeship opportunity, 
             Please do not hesitate to email me using the link below regarding potential positions.`,
-            Status_not_searching: `Hi, thanks for visiting my portfolio website. 
+    Status_not_searching: `Hi, thanks for visiting my portfolio website. 
             Feel free to send me an email.`
 }
 
