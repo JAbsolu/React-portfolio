@@ -7,7 +7,6 @@ import Home from './views/home';
 import Nav from './components/nav';
 import { themeSettings } from './theme';
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 ;
 function App() {
