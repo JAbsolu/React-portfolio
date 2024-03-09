@@ -92,7 +92,7 @@ export const projects = [
     },
     {
       name: "Ecommerce Website",
-      frontendView: "https://jabsolu.github.io/sneaker-web-app/",
+      frontendView: "https://sneakeryoo.vercel.app",
       github: "https://github.com/JAbsolu/sneaker-web-app",
       technology: ["HTML", "CSS", "Javascript"],
       description:
