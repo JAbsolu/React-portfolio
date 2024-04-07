@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CodeIcon from '@mui/icons-material/Code';
-import { user } from '../../assets';
+import { user } from '../../resources';
 import { themeSettings } from '../../theme';
 import { useMediaQuery } from '@mui/material';
 
