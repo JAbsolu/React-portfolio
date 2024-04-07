@@ -15,7 +15,7 @@ import { GitHub, LinkedIn, DownloadOutlined } from "@mui/icons-material";
 import FlexBetween from "../../components/flexBetween";
 import Contact from "../../components/contact";
 import Footer from "../../components/footer";
-import { WebsiteTexts, user } from "../../assets";
+import { WebsiteTexts, user } from "../../resources";
 import { themeSettings } from "../../theme";
 import { attributes } from "../../pageAttributes";
 import illustration from '../../media/MERN.png';
