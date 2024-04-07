@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import FlexBetween from "../flexBetween";
 import { themeSettings } from "../../theme";
 import { useMediaQuery } from "@mui/material";
-import { projects } from "../../assets";
+import { projects } from "../../resources";
 
 const ProjectCards = () => {
   const isMac = useMediaQuery("(min-width: 1400px)");
