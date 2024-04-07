@@ -12,7 +12,7 @@ export const user = {
 
 export const WebsiteTexts = {
     title : `I'm a Software Engineer Based in Connecticut`,
-    subtitle: `I'm a Software Developer passionate about building accessible web apps that users love.`,
+    subtitle: `I'm a Software Engineer passionate about building accessible web apps that users love.`,
     about: `I'm a passionate Software 
             Engineer specializing in building responsive web applications. 
             I am currently enrolled in a bachelor's degree program in computer 
