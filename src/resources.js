@@ -27,7 +27,7 @@ export const WebsiteTexts = {
 export const projects = [
   {
     name: "CT State GPA Calculator",
-    frontendView: 'https://gpa-calculator-pink.vercel.app/',
+    frontendView: 'https://ctstategpa.vercel.app/',
     github: "https://github.com/JAbsolu/CT-State-CC-GPA-Calculator",
     technology: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     description: "A GPA calulator intended to be used for the Connecticut State Colleges.",
