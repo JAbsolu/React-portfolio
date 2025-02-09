@@ -27,12 +27,12 @@ const Contact = () => {
             alignItems: "center",
             justifyContent: "center"
         }}>
-            <Box>
-              <Typography variant={ isMobile ? "h4" : "h3" } sx={{
+            <Box sx={{ pt: "1.5rem"}}>
+              <Typography variant={ isMobile ? "h4" : "h5" } sx={{
                   fontWeight: "bolder",
                   mb: "1rem",
               }}>
-                  Get In Touch.
+                  Get in touch with me
               </Typography>
               </Box>
             <Box sx={{
@@ -47,7 +47,7 @@ const Contact = () => {
                   {WebsiteTexts.Status_not_searching}
               </Typography>
             </Box>
-            <Box id={attributes.contact}>
+            <Box id={attributes.contact} >
               <Button 
                 variant="outlined"
                 size="large"
@@ -57,6 +57,7 @@ const Contact = () => {
                   color: green,
                   textTransform: "none",
                   mt: "1rem",
+                  mb: "1rem",
                   fontWeight: "200",
                 }}>
                   Send email

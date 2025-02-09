@@ -21,7 +21,7 @@ const Projects = () => {
         }}
       >
         <Typography
-          variant={ isMobile ? "h6" : "h4" }
+          variant={ isMobile ? "h6" : "h5" }
           id={attributes.projects}
           sx={{
             fontWeight: "500",
@@ -58,14 +58,16 @@ const Projects = () => {
           display: "flex",
           gap: "1rem",
           pb: "2rem",
-          flexWrap: "wrap",
+          // flexWrap: "wrap",
+          overflow: "auto",
           justifyContent: isMobile ? "center" : null,
           alignItems: "center",
         }}
       >
-        {/* CARD 1 */}
+        {/* CARDs */}
         <ProjectCards />
       </Box>
+      <Typography sx={{ textAlign: "start", fontSize: "0.8rem", pl: "0.5rem", mt:"-1.4rem", color: green}}>Scroll right</Typography>
     </Box>
   );
 };

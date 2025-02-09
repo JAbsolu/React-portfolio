@@ -38,7 +38,7 @@ const Footer = () => {
                 },
                }}
             >
-                Copyright 2023 - Built by {`${firstName} ${lastName}`}
+                {`${firstName} ${lastName}`}
             </Link>
         </Box>
     );

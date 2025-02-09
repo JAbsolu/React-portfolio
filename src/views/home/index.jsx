@@ -41,149 +41,43 @@ import Projects from "../../components/Projects";
     const resume = user.resume;
   
     return (
-      <Box
-        p={ isWideScreen ? "0rem 15rem" : isNonMobile ? "0rem 2rem" : "0rem 1rem"}
-        sx={{
-          background: darkNavy,
-        }}
-      >
+      <Box p={ isWideScreen ? "0rem 15rem" : isNonMobile ? "0rem 2rem" : "0rem 1rem"} sx={{  background: darkNavy,  }} >
         
         {/* INTRODUCTION */}
-        <Box
-          sx={{
-            pt: isNonMobile ? "7rem" : "3rem",
-          }}
-        >
+        <Box sx={{ pt: isNonMobile ? "7rem" : "3rem", }} >
           <Box>
             {/* FLEXBOX */}
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                flexDirection: isMobile ? "column-reverse" : "flex",
-                justifyContent: "space-between",
-                alignItems: "start",
-              }}
-            >
+            <Box sx={{ display: "flex", flexWrap: "wrap", flexDirection: isMobile ? "column-reverse" : "flex", justifyContent: "space-between", alignItems: "start", }} >
               <Box sx={{ mt: isMobile ? "2rem" : "" }}>
-                <Typography
-                  paddingLeft={isNonMobile ? "5px" : null}
-                  color={green}
-                  sx={{
-                    wordSpacing: "2px",
-                    mb: "0.5rem",
-                  }}
-                >
+                <Typography paddingLeft={isNonMobile ? "5px" : null} color={green} sx={{   wordSpacing: "2px",   mb: "0.5rem", }} >
                   Hi, my name is
                 </Typography>
-                <Typography
-                  variant={isMobile ? "h4" : "h2"}
-                  color={white}
-                  sx={{
-                    fontWeight: "bolder",
-                  }}
-                >
+                <Typography variant={isMobile ? "h5" : "h3"} color={white} sx={{ fontWeight: "bolder", }} >
                   {`${fullName}.`}
-                  <Typography
-                    variant={isMobile ? "h5" : "h3"}
-                    sx={{
-                      fontWeight: "bolder",
-                      color: slate,
-                    }}
-                  >
+                  <Typography variant={isMobile ? "h6" : "h4"} sx={{ fontWeight: "bolder", color: slate, }} >
                     {/* WEBSITE TITLE TEXT */}
                     {WebsiteTexts.title}
                   </Typography>
                 </Typography>
       
-                <Typography
-                  sx={{
-                    p: isMobile ? "1rem 0" : "2rem 0",
-                    mb: "1rem",
-                    color: slate,
-                    fontWeight:"200",
-                    maxWidth: "33rem",
-                  }}
-                >
+                <Typography sx={{ p: isMobile ? "1rem 0" : "1rem 0", mb: "1rem", color: slate, fontWeight:"200", maxWidth: "33rem", }} >
                   {/* WEBSITE SUBTITLE TEXT */}
                   {WebsiteTexts.subtitle}
                 </Typography>
               {/* CALL TO ACTION BUTTONS */}
-                <FlexBetween
-                  sx={{
-                    gap: "1rem",
-                    maxWidth: isNonMobile ? "25rem" : "20rem",
-                  }}
-                >
-                  <Button
-                    variant="outlined"
-                    href={user.linkedIn}
-                    target="_blank"
-                    sx={{
-                      color: lightSlate,
-                      textTransform: "none",
-                      "&:hover": {
-                        color: green,
-                      },
-                    }}
-                  >
-                    <LinkedIn
-                      sx={{
-                        color: lightSlate,
-                        p: "4px",
-                        "&:hover": {
-                          color: green,
-                        },
-                      }}
-                    />
+                <FlexBetween sx={{ gap: "1rem", maxWidth: isNonMobile ? "25rem" : "20rem", }} >
+                  <Button variant="outlined" href={user.linkedIn} target="_blank" sx={{ color: lightSlate, textTransform: "none", "&:hover": {   color: green, }, }} >
+                    <LinkedIn sx={{ color: lightSlate, p: "4px", "&:hover": { color: green,  }, }} />
                     Linkedin
                   </Button>
       
-                  <Button
-                    variant="outlined"
-                    href={user.gitHub}
-                    target="_blank"
-                    sx={{
-                      color: lightSlate,
-                      textTransform: "none",
-                      "&:hover": {
-                        color: green,
-                      },
-                    }}
-                  >
-                    <GitHub
-                      sx={{
-                        color: lightSlate,
-                        p: "4px",
-                        "&:hover": {
-                          color: green,
-                        },
-                      }}
-                    />
+                  <Button variant="outlined" href={user.gitHub} target="_blank" sx={{ color: lightSlate, textTransform: "none", "&:hover": {   color: green, }, }} >
+                    <GitHub sx={{  color: lightSlate, p: "4px",  "&:hover": { color: green, },}}/>
                     Github
                   </Button>
       
-                  <Button
-                    variant="outlined"
-                    href={isNonMobile ? resume_link : resume}
-                    target="_blank"
-                    sx={{
-                      color: lightSlate,
-                      textTransform: "none",
-                      "&:hover": {
-                        color: green,
-                      },
-                    }}
-                  >
-                    <DownloadOutlined
-                      sx={{
-                        color: lightSlate,
-                        p: "4px",
-                        "&:hover": {
-                          color: green,
-                        },
-                      }}
-                    />
+                  <Button variant="outlined" href={isNonMobile ? resume_link : resume} target="_blank" sx={{ color: lightSlate, textTransform: "none", "&:hover": { color: green, }, }}>
+                    <DownloadOutlined sx={{ color: lightSlate, p: "4px", "&:hover": { color: green, }, }} />
                     Resume
                   </Button>
                 </FlexBetween>
@@ -195,117 +89,31 @@ import Projects from "../../components/Projects";
             </Box>
 
             {/* TECHONOLOGIES */}
-            <Box
-              sx={{
-                pt: "3rem",
-                width: isNonMobile ? "90%" : null,
-              }}
-            >
+            <Box sx={{ pt: "3rem", width: isNonMobile ? "90%" : null,}}>
               <FlexBetween>
-                <HtmlIcon
-                  sx={{
-                    fontSize: "3rem",
-                    color: lightSlate,
-                  }}
-                />
-                <Typography
-                  sx={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  SASS
-                </Typography>
-                <CssIcon
-                  sx={{
-                    fontSize: "3rem",
-                    color: lightSlate,
-                  }}
-                />
-                <JavascriptIcon
-                  sx={{
-                    fontSize: "3rem",
-                    color: lightSlate,
-                  }}
-                />
-                <PhpIcon
-                  sx={{
-                    fontSize: "3rem",
-                    color: lightSlate,
-                  }}
-                />
+                <Typography sx={{fontWeight: "bold",}}> MONGO DB </Typography>
+                <Typography sx={{fontWeight: "bold",}}> EXPRESS </Typography>
+                <Typography sx={{ fontWeight: "bolder", }} > REACT </Typography>
+                <Typography sx={{ fontWeight: "bolder", }} > NODE JS </Typography>
+                <Typography sx={{ fontWeight: "bolder", }} > PHP </Typography>
               </FlexBetween>
               <FlexBetween>
-                <Typography
-                  sx={{
-                    fontWeight: "bolder",
-                  }}
-                >
-                  REACT
+              <Typography sx={{ fontWeight: "bolder", }} > OPENAI API </Typography>
+                <Typography sx={{ fontWeight: "bolder", }}> PYTHON </Typography>
+                <Typography sx={{ display: "flex", justifyContent: "center", alignItems: "center", color: lightSlate,  fontWeight: "bolder", }}>
+                  <JoinLeftIcon sx={{ fontSize: "2rem", color: lightSlate, }}/>
+                  MYSQL
                 </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: "bolder",
-                  }}
-                >
-                  JQUERY
-                </Typography>
-                <Typography
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: lightSlate,
-                    fontWeight: "bolder",
-                  }}
-                >
-                  <JoinLeftIcon
-                    sx={{
-                      fontSize: "2rem",
-                      color: lightSlate,
-                    }}
-                  />
-                  SQL
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: "bolder",
-                  }}
-                >
-                  NODE JS
-                </Typography>
-                <Typography
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    fontWeight: "bolder",
-                  }}
-                >
-                  <TerminalIcon sx={{ marginRight: "2px" }} />
-                  LINUX
-                </Typography>
+                <Typography sx={{ fontWeight: "bolder", }} > GITHUB</Typography>
+                <Typography sx={{ fontWeight: "bolder", }} > GIT </Typography>
               </FlexBetween>
             </Box>
           </Box>
         </Box>
   
         {/* ABOUT ME DIVIDER & TITLE */}
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "start",
-            paddingTop: "5rem",
-            gap: "1rem",
-          }}
-        >
-          <Typography
-            variant={isMobile ? "h6" : "h4"}
-            sx={{
-              fontWeight: "500",
-              color: lightSlate,
-            }}
-          >
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "start", paddingTop: "5rem", gap: "1rem", }}>
+          <Typography variant={isMobile ? "h6" : "h5"} sx={{ fontWeight: "500", color: lightSlate, }}>
             About Me
           </Typography>
         </Box>
@@ -319,13 +127,7 @@ import Projects from "../../components/Projects";
           }}
         >
           <Box>
-            <Typography
-              sx={{
-                p: "1rem 0",
-                lineHeight: "1.8",
-                fontWeight: "200",
-              }}
-            >
+            <Typography sx={{ p: "1rem 0", lineHeight: "1.8", fontWeight: "200", fontSize: "0.9rem"}} >
               {/* WEBSITTE ABOUT ME TEXT */}
               {WebsiteTexts.about}
             </Typography>
@@ -335,13 +137,7 @@ import Projects from "../../components/Projects";
         <Projects />
         {/* CONTACT */}
         <Contact />
-        <Divider
-            sx={{
-              background: navy,
-              mt: "3rem",
-              padding: "5px"
-            }}
-          />
+        <Divider sx={{ background: navy,  mt: "2rem",  padding: "5px"}}/>
         <Footer />
       </Box>
     );

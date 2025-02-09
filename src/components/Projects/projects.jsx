@@ -14,6 +14,8 @@ const ProjectCards = () => {
   const green = themeSettings.palette.primary.green;
   const navy = themeSettings.palette.primary.navy;
   const lightSlate = themeSettings.palette.primary.lightSlate;
+  const darkNavy = themeSettings.palette.primary.darkNavy;
+  const slate = themeSettings.palette.primary.slate;
 
   let card = new Array(projects.length); // array with a fixed length of the projects array's length
   let i = 0; //index to increment and add prohects to card array
@@ -29,9 +31,8 @@ const ProjectCards = () => {
       <Link href={frontend} underline="none" target="_new">
         <Card
           sx={{
-            minWidth: isMac ? "24rem" : "19rem",
-            maxWidth: isMac ? "26rem" : "22.5rem",
-            minHeight: "19rem",
+            minWidth: "23rem",
+            maxHeight: "16rem",
             background: navy,
             borderRadius: "5px",
             mt: "5px",
@@ -47,7 +48,7 @@ const ProjectCards = () => {
                 <GitHubIcon
                   sx={{
                     color: lightSlate,
-                    fontSize: "1.8rem",
+                    fontSize: "1.5rem",
                     "&:hover": {
                       color: green,
                       cursor: "pointer",
@@ -58,7 +59,7 @@ const ProjectCards = () => {
               <LaunchIcon
                 sx={{
                   color: lightSlate,
-                  fontSize: "1.8rem",
+                  fontSize: "1.5rem",
                   "&:hover": {
                     color: green,
                     cursor: "pointer",
@@ -68,7 +69,7 @@ const ProjectCards = () => {
             </FlexBetween>
 
             <Typography
-              variant="h6"
+              variant="h7"
               sx={{
                 color: green,
                 pt: "2rem",
@@ -82,10 +83,10 @@ const ProjectCards = () => {
               sx={{
                 color: lightSlate,
                 lineHeight: "1.5",
-                fontSize: "0.95rem",
+                fontSize: "0.9rem",
                 fontWeight: "100",
                 pt: "0.5rem",
-                pb: "3rem",
+                pb: "3.5rem",
               }}
             >
               {description}
