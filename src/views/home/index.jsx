@@ -65,7 +65,7 @@ import Projects from "../../components/Projects";
                   {WebsiteTexts.subtitle}
                 </Typography>
               {/* CALL TO ACTION BUTTONS */}
-                <FlexBetween sx={{ gap: "1rem", maxWidth: isNonMobile ? "25rem" : "20rem", }} >
+                <FlexBetween sx={{ gap: "1rem", maxWidth: isNonMobile ? "25rem" : "20rem"}} >
                   <Button variant="outlined" href={user.linkedIn} target="_blank" sx={{ color: lightSlate, textTransform: "none", "&:hover": {   color: green, }, }} >
                     <LinkedIn sx={{ color: lightSlate, p: "4px", "&:hover": { color: green,  }, }} />
                     Linkedin
@@ -90,7 +90,7 @@ import Projects from "../../components/Projects";
 
             {/* TECHONOLOGIES */}
             <Box sx={{ pt: "3rem", width: isNonMobile ? "90%" : null,}}>
-              <FlexBetween>
+              <FlexBetween sx={{ mb: "0.5rem"}}>
                 <Typography sx={{fontWeight: "bold",}}> MONGO DB </Typography>
                 <Typography sx={{fontWeight: "bold",}}> EXPRESS </Typography>
                 <Typography sx={{ fontWeight: "bolder", }} > REACT </Typography>
@@ -112,7 +112,7 @@ import Projects from "../../components/Projects";
         </Box>
   
         {/* ABOUT ME DIVIDER & TITLE */}
-        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "start", paddingTop: "5rem", gap: "1rem", }}>
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "start", paddingTop: "3rem", gap: "1rem", }}>
           <Typography variant={isMobile ? "h6" : "h5"} sx={{ fontWeight: "500", color: lightSlate, }}>
             About Me
           </Typography>

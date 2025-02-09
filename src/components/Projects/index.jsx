@@ -9,7 +9,7 @@ const Projects = () => {
   const isMobile = useMediaQuery("(max-width: 700px)");
 
   return (
-    <Box sx={{ mt: "5rem", textAlign: "left" }}>
+    <Box sx={{ mt: "2rem", textAlign: "left" }}>
       <Box
         sx={{
           display: "flex",
