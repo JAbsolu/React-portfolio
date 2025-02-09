@@ -26,6 +26,20 @@ export const WebsiteTexts = {
 
 export const projects = [
   {
+    name: "AI Investment App",
+    // frontendView: 'https://ctstategpa.vercel.app/',
+    github: "https://github.com/JAbsolu/Invest.ai",
+    technology: ["OpenAI-GPT-4O", "Node JS", "React Native"],
+    description: "An AI app that leverages openAI-GPT-40 and Yahoo Finance to get stock data, relevent stock articles and determines whether a stock is a bearish or bullish.",
+  },
+  {
+    name: "Event Management App",
+    // frontendView: 'https://ctstategpa.vercel.app/',
+    github: "https://github.com/JAbsolu/Invest.ai",
+    technology: ["Node JS", "MYSQL", "Google Cloud"],
+    description: "A Fullstack Application that allows students, staff, and faculty to create, and manage events.",
+  },
+  {
     name: "CT State GPA Calculator",
     frontendView: 'https://ctstategpa.vercel.app/',
     github: "https://github.com/JAbsolu/CT-State-CC-GPA-Calculator",
