@@ -30,7 +30,7 @@ export const projects = [
     // frontendView: 'https://ctstategpa.vercel.app/',
     github: "https://github.com/JAbsolu/Invest.ai",
     technology: ["OpenAI-GPT-4O", "Node JS", "React Native"],
-    description: "An AI app that leverages openAI-GPT-40 and Yahoo Finance to get stock data, relevent stock articles and determines whether a stock is a bearish or bullish.",
+    description: "An AI app that leverages openAI-GPT-40 and Yahoo Finance to determine whether a stock is a bearish or bullish.",
   },
   {
     name: "Event Management App",
