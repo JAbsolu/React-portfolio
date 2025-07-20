@@ -11,12 +11,13 @@ export const user = {
 };
 
 export const WebsiteTexts = {
-    title : `I'm a Software Engineer Based in Connecticut`,
+    title : `I'm a Software Engineer Based in New York`,
     subtitle: `I'm a Software Engineer passionate about building accessible web apps that users love.`,
-    about: `I'm a passionate Software 
-            Engineer specializing in building responsive web applications. 
-            I am currently enrolled in a bachelor's degree program in computer 
-            science at Southern Connecticut State University.`,
+    about: `I'm a dedicated Software Engineer with a strong passion for building dynamic, user-friendly web applications. 
+            With hands-on experience across the full stack—from developing AI-powered platforms like Investi.tech to creating 
+            event managers, GPA calculators, eCommerce sites, and social media apps—I thrive on turning complex ideas into 
+            practical digital solutions. My projects span technologies including React, Node.js, Next.js, MongoDB, Firebase, 
+            PHP, MySQL, and cloud services like AWS and Google Cloud.`,
     Status_searching: `I am actively looking for an Entry-level or Apprenticeship opportunity, 
             Please do not hesitate to email me using the link below regarding potential positions.`,
     Status_not_searching: `Hi, thanks for visiting my portfolio website. 
@@ -26,10 +27,10 @@ export const WebsiteTexts = {
 
 export const projects = [
   {
-    name: "AI Investment App",
-    // frontendView: 'https://ctstategpa.vercel.app/',
+    name: "Investi.tech - AI Stock Research",
+    frontendView: 'https://www.investi.tech/',
     github: "https://github.com/JAbsolu/Invest.ai",
-    technology: ["OpenAI-GPT-4O", "Node JS", "React Native"],
+    technology: ["OpenAI GPT", "Node JS", "Next JS", "Firebase", "AWS"],
     description: "An AI app that leverages openAI-GPT-40 and Yahoo Finance to determine whether a stock is a bearish or bullish.",
   },
   {

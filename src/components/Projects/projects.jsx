@@ -1,38 +1,36 @@
-import { Typography, Link } from "@mui/material";
+import { Typography, Link, Box } from "@mui/material";
 import LaunchIcon from "@mui/icons-material/Launch";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import FlexBetween from "../flexBetween";
 import { themeSettings } from "../../theme";
-import { useMediaQuery } from "@mui/material";
+// import { useMediaQuery } from "@mui/material";
 import { projects } from "../../resources";
 
 const ProjectCards = () => {
-  const isMac = useMediaQuery("(min-width: 1400px)");
+  // const isMac = useMediaQuery("(min-width: 1400px)");
 
   const green = themeSettings.palette.primary.green;
   const navy = themeSettings.palette.primary.navy;
   const lightSlate = themeSettings.palette.primary.lightSlate;
-  const darkNavy = themeSettings.palette.primary.darkNavy;
-  const slate = themeSettings.palette.primary.slate;
+  
+  return (
+    <Box sx={{ display: "flex", gap: "1rem", }}>
+    {projects.length > 0  && projects.map((project) => {
+      const name = project.name;
+      const frontend = project.frontendView;
+      const github = project.github;
+      const technologies = project.technology;
+      const description = project.description;
 
-  let card = new Array(projects.length); // array with a fixed length of the projects array's length
-  let i = 0; //index to increment and add prohects to card array
-
-  for (let project of projects) {
-    let name = project.name;
-    let frontend = project.frontendView;
-    let github = project.github;
-    let technologies = project.technology;
-    let description = project.description;
-
-    card[i] = (
-      <Link href={frontend} underline="none" target="_new">
+      return (
+         <Link href={frontend} underline="none" target="_new">
         <Card
           sx={{
-            minWidth: "23rem",
-            maxHeight: "16rem",
+            minWidth: "28rem",
+            minHeight: "16rem",
+            maxHeight: "17rem",
             background: navy,
             borderRadius: "5px",
             mt: "5px",
@@ -48,7 +46,7 @@ const ProjectCards = () => {
                 <GitHubIcon
                   sx={{
                     color: lightSlate,
-                    fontSize: "1.5rem",
+                    fontSize: "2rem",
                     "&:hover": {
                       color: green,
                       cursor: "pointer",
@@ -59,7 +57,7 @@ const ProjectCards = () => {
               <LaunchIcon
                 sx={{
                   color: lightSlate,
-                  fontSize: "1.5rem",
+                  fontSize: "2rem",
                   "&:hover": {
                     color: green,
                     cursor: "pointer",
@@ -86,7 +84,7 @@ const ProjectCards = () => {
                 fontSize: "0.9rem",
                 fontWeight: "100",
                 pt: "0.5rem",
-                pb: "3.5rem",
+                pb: "2rem",
               }}
             >
               {description}
@@ -112,11 +110,10 @@ const ProjectCards = () => {
           </CardContent>
         </Card>
       </Link>
-    );
-    i++;
-  }
-
-  return card;
+      )
+    })}
+    </Box>
+  )
 };
 
 export default ProjectCards;

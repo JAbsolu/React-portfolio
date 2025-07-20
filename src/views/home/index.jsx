@@ -5,12 +5,6 @@ import {
     Divider,
     Button,
   } from "@mui/material";
-import HtmlIcon from "@mui/icons-material/Html";
-import CssIcon from "@mui/icons-material/Css";
-import JavascriptIcon from "@mui/icons-material/Javascript";
-import PhpIcon from "@mui/icons-material/Php";
-import JoinLeftIcon from "@mui/icons-material/JoinLeft";
-import TerminalIcon from "@mui/icons-material/Terminal";
 import { GitHub, LinkedIn, DownloadOutlined } from "@mui/icons-material";
 import FlexBetween from "../../components/flexBetween";
 import Contact from "../../components/contact";
@@ -20,7 +14,6 @@ import { themeSettings } from "../../theme";
 import { attributes } from "../../pageAttributes";
 import illustration from '../../media/MERN.png';
 import Projects from "../../components/Projects";
-
 
   const Home = () => {
     const green = themeSettings.palette.primary.green;
@@ -39,7 +32,28 @@ import Projects from "../../components/Projects";
     const fullName = `${firstName} ${lastName}`;
     const resume_link = user.resume_link;
     const resume = user.resume;
-  
+
+    /*
+    const technologies = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Next JS",
+      "React JS",
+      "Material UI",
+      "Tailwind CSS",
+      "AWS",
+      "AI Integration",
+      "Mongo DB",
+      "Express JS",
+      "Node JS",
+      "PHP",
+      "Python",
+      "MySQL",
+      "Git"
+    ]
+  */
     return (
       <Box p={ isWideScreen ? "0rem 15rem" : isNonMobile ? "0rem 2rem" : "0rem 1rem"} sx={{  background: darkNavy,  }} >
         
@@ -87,33 +101,13 @@ import Projects from "../../components/Projects";
                 <img src={illustration} width={ isMobile ? "350" : "450" }/>  
               </Box>
             </Box>
-
-            {/* TECHONOLOGIES */}
-            <Box sx={{ pt: "3rem", width: isNonMobile ? "90%" : null,}}>
-              <FlexBetween sx={{ mb: "0.5rem"}}>
-                <Typography sx={{fontWeight: "bold",}}> MONGO DB </Typography>
-                <Typography sx={{fontWeight: "bold",}}> EXPRESS </Typography>
-                <Typography sx={{ fontWeight: "bolder", }} > REACT </Typography>
-                <Typography sx={{ fontWeight: "bolder", }} > NODE JS </Typography>
-                <Typography sx={{ fontWeight: "bolder", }} > PHP </Typography>
-              </FlexBetween>
-              <FlexBetween>
-              <Typography sx={{ fontWeight: "bolder", }} > OPENAI API </Typography>
-                <Typography sx={{ fontWeight: "bolder", }}> PYTHON </Typography>
-                <Typography sx={{ display: "flex", justifyContent: "center", alignItems: "center", color: lightSlate,  fontWeight: "bolder", }}>
-                  <JoinLeftIcon sx={{ fontSize: "2rem", color: lightSlate, }}/>
-                  MYSQL
-                </Typography>
-                <Typography sx={{ fontWeight: "bolder", }} > GITHUB</Typography>
-                <Typography sx={{ fontWeight: "bolder", }} > GIT </Typography>
-              </FlexBetween>
-            </Box>
+            
           </Box>
         </Box>
   
         {/* ABOUT ME DIVIDER & TITLE */}
         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "start", paddingTop: "3rem", gap: "1rem", }}>
-          <Typography variant={isMobile ? "h6" : "h5"} sx={{ fontWeight: "500", color: lightSlate, }}>
+          <Typography variant={isMobile ? "h5" : "h4"} sx={{ fontWeight: "600", color: "white", }}>
             About Me
           </Typography>
         </Box>
@@ -133,6 +127,25 @@ import Projects from "../../components/Projects";
             </Typography>
           </Box>         
         </Box>
+
+        {/* TECHONOLOGIES */}
+            {/* <Box sx={{ pt: "3rem", width: isNonMobile ? "90%" : null,}}>
+              <Typography variant={isMobile ? "h5" : "h4"} sx={{ fontWeight: "600", color: "white", mb: "1rem", }} >
+                Technical Skills
+              </Typography>
+                <Box sx={{ mb: "0.5rem", display: "flex", justifyContent: "flex-start", flexWrap: "wrap", gap: "1rem", }}>
+                  {technologies.map((tech, index) => (
+                    <Card  key={index} sx={{ background: navy, borderRadius: "5px", width: "8em" }}>
+                      <CardContent key={index}>
+                        <Typography key={index} variant="h7" sx={{ color: green }}>
+                          {tech}
+                        </Typography>
+                      </CardContent>
+                    </Card>                    
+                  ))}
+                </Box>
+            </Box> */}
+
         {/* PROJECTS */}
         <Projects />
         {/* CONTACT */}

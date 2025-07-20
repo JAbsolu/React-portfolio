@@ -21,11 +21,12 @@ const Projects = () => {
         }}
       >
         <Typography
-          variant={ isMobile ? "h6" : "h5" }
+          variant={ isMobile ? "h6" : "h4" }
           id={attributes.projects}
           sx={{
-            fontWeight: "500",
+            fontWeight: "600",
             pt: "0.5rem",
+            color: "white"
           }}
         >
           My Projects
