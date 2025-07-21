@@ -25,8 +25,12 @@ const ProjectCards = () => {
           <Link href={frontend} underline="none" target="_new">
           <Card
             sx={{
-              minWidth: "28rem",
-              minHeight: "16rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              minWidth: "32rem",
+              minHeight: "17rem",
               maxHeight: "17rem",
               background: navy,
               borderRadius: "5px",
@@ -87,7 +91,7 @@ const ProjectCards = () => {
                 {description}
               </Typography>
 
-              <FlexBetween sx={{ pb: "0" }} >
+              <Box sx={{ display: "flex", justifyContent: "start", pb: "0", gap: "1.5rem", flexWrap: "wrap" }} >
                 {technologies.map((value) => (
                   <Typography key={value} sx={{
                       color: lightSlate,
@@ -98,7 +102,7 @@ const ProjectCards = () => {
                     {value}
                   </Typography>
                 ))}
-              </FlexBetween>
+              </Box>
             </CardContent>
           </Card>
         </Link>

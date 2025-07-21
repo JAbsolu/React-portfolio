@@ -37,7 +37,7 @@ export const projects = [
     name: "Notesage - Quiz and Notes App",
     frontendView: 'https://www.note-sage.com/',
     github: "https://github.com/JAbsolu/Invest.ai",
-    technology: ["Node JS", "Express JS", "Mongo DB", "AWS", "Next JS", "Material UI", "Tailwind CSS", "Javascript"],
+    technology: ["Node JS", "MongoDB", "AWS", "Next JS", "MUI", "Tailwind"],
     description: `A full-stack web application that allows students to transform their notes into personalized flashcards and quizzes.`,
   },
   {
