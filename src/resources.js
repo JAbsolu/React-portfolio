@@ -38,10 +38,7 @@ export const projects = [
     frontendView: 'https://www.note-sage.com/',
     github: "https://github.com/JAbsolu/Invest.ai",
     technology: ["Node JS", "Express JS", "Mongo DB", "AWS", "Next JS", "Material UI", "Tailwind CSS", "Javascript"],
-    description: `NoteSage is a full-stack web application that helps students create and study from custom flashcards 
-                  and quizzes based on their own notes. It simplifies the study process by making it easy to turn class 
-                  materials into personalized flashcards and quizzes. By focusing on user-created content, NoteSage 
-                  promotes active learning and better retention.`,
+    description: `A full-stack web application that allows students to transform their notes into personalized flashcards and quizzes.`,
   },
   {
       name: "React Todo List Application",
