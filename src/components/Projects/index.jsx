@@ -16,17 +16,17 @@ const Projects = () => {
           justifyContent: isMobile ? "space-between" : "start",
           alignItems: "end",
           gap: isMobile ? "" : "0.8rem",
-          padding: isMobile ? "0 0.85rem" : "" ,
+          padding: isMobile ? "0 0.85rem" : "",
           mb: "1rem",
         }}
       >
         <Typography
-          variant={ isMobile ? "h6" : "h4" }
+          variant={isMobile ? "h6" : "h4"}
           id={attributes.projects}
           sx={{
             fontWeight: "600",
             pt: "0.5rem",
-            color: "white"
+            color: "white",
           }}
         >
           My Apps
@@ -68,7 +68,17 @@ const Projects = () => {
         {/* CARDs */}
         <ProjectCards />
       </Box>
-      <Typography sx={{ textAlign: "start", fontSize: "0.8rem", pl: "0.5rem", mt:"-1.4rem", color: green}}>Scroll right</Typography>
+      <Typography
+        sx={{
+          textAlign: "start",
+          fontSize: "0.8rem",
+          pl: "0.5rem",
+          mt: "-1.4rem",
+          color: green,
+        }}
+      >
+        Scroll right
+      </Typography>
     </Box>
   );
 };

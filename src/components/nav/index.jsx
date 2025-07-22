@@ -1,20 +1,20 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import CodeIcon from '@mui/icons-material/Code';
-import { user } from '../../resources';
-import { themeSettings } from '../../theme';
-import { useMediaQuery } from '@mui/material';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import CodeIcon from "@mui/icons-material/Code";
+import { user } from "../../resources";
+import { themeSettings } from "../../theme";
+import { useMediaQuery } from "@mui/material";
 
-const pages = ['About', 'Projects', "Contact"];
+const pages = ["About", "Projects", "Contact"];
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -45,43 +45,45 @@ const Nav = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  
+
   return (
-    <AppBar 
-      position="static" 
+    <AppBar
+      position="static"
       sx={{
         background: darkNavy,
         color: green,
-        p: isWideScreen ? "0 15rem"  : "0",
+        p: isWideScreen ? "0 15rem" : "0",
       }}
     >
-      <Container maxWidth="100%" sx={{ p: "0"}}>
+      <Container maxWidth="100%" sx={{ p: "0" }}>
         <Toolbar disableGutters>
-          <CodeIcon 
-            sx={{ display: { xs: 'none', md: 'flex' },
-            mr: "0.5rem",
-            ml: "0",
-            color: green
-          }} />
+          <CodeIcon
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: "0.5rem",
+              ml: "0",
+              color: green,
+            }}
+          />
           <Typography
-            variant= 'h6'
+            variant="h6"
             noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: { xs: "none", md: "flex" },
               fontFamily: themeFont,
               fontWeight: 300,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
             {fullName}
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -89,7 +91,7 @@ const Nav = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              sx={{ pl: ".5rem", }}
+              sx={{ pl: ".5rem" }}
             >
               <MenuIcon />
             </IconButton>
@@ -97,26 +99,30 @@ const Nav = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{
-                  background: darkNavy,
-                  color: white,
-                }}>
-                  <Button 
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    background: darkNavy,
+                    color: white,
+                  }}
+                >
+                  <Button
                     textAlign="center"
                     href={`#${page}`}
                     sx={{
@@ -125,7 +131,7 @@ const Nav = () => {
                       "&:hover": {
                         color: darkNavy,
                         background: white,
-                      }
+                      },
                     }}
                   >
                     {page}
@@ -135,40 +141,41 @@ const Nav = () => {
             </Menu>
             {/* WEB MENU */}
           </Box>
-          <CodeIcon 
-            sx={{ 
-              display: { xs: 'flex', md: 'none' },
+          <CodeIcon
+            sx={{
+              display: { xs: "flex", md: "none" },
               mr: 1,
               color: green,
               background: lightNavy,
-              p: '5px',
-              borderRadius: '50%'
-          }} />
+              p: "5px",
+              borderRadius: "50%",
+            }}
+          />
           <Typography
-            variant='p'
+            variant="p"
             noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: themeFont,
               fontWeight: 600,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".1rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
             {fullName}
           </Typography>
           {/* MENU ITEMS COTAINER */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: lightSlate, display: 'block' }}
+                sx={{ my: 2, color: lightSlate, display: "block" }}
                 href={`#${page}`}
               >
                 {page}
@@ -179,5 +186,5 @@ const Nav = () => {
       </Container>
     </AppBar>
   );
-}
+};
 export default Nav;

@@ -11,105 +11,116 @@ const ProjectCards = () => {
   const green = themeSettings.palette.primary.green;
   const navy = themeSettings.palette.primary.navy;
   const lightSlate = themeSettings.palette.primary.lightSlate;
-  
+
   return (
-    <Box sx={{ display: "flex", gap: "1rem", scrollbars: "none"}}>
-      {projects.length > 0  && projects.map((project) => {
-        const name = project.name;
-        const frontend = project.frontendView;
-        const github = project.github;
-        const technologies = project.technology;
-        const description = project.description;
+    <Box sx={{ display: "flex", gap: "1rem", scrollbars: "none" }}>
+      {projects.length > 0 &&
+        projects.map((project) => {
+          const name = project.name;
+          const frontend = project.frontendView;
+          const github = project.github;
+          const technologies = project.technology;
+          const description = project.description;
 
-        return (
-          <Link href={frontend} underline="none" target="_new">
-          <Card
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              minWidth: "32rem",
-              minHeight: "17rem",
-              maxHeight: "17rem",
-              background: navy,
-              borderRadius: "5px",
-              mt: "5px",
-            }}
-          >
-            <CardContent
-              sx={{
-                p: "2rem",
-              }}
-            >
-              <FlexBetween>
-                <Link href={github} target="_new">
-                  <GitHubIcon
-                    sx={{
-                      color: lightSlate,
-                      fontSize: "2rem",
-                      "&:hover": {
-                        color: green,
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Link>
-                <LaunchIcon
+          return (
+            <Link href={frontend} underline="none" target="_new">
+              <Card
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  minWidth: "32rem",
+                  minHeight: "17rem",
+                  maxHeight: "17rem",
+                  background: navy,
+                  borderRadius: "5px",
+                  mt: "5px",
+                }}
+              >
+                <CardContent
                   sx={{
-                    color: lightSlate,
-                    fontSize: "2rem",
-                    "&:hover": {
-                      color: green,
-                      cursor: "pointer",
-                    },
+                    p: "2rem",
                   }}
-                />
-              </FlexBetween>
+                >
+                  <FlexBetween>
+                    <Link href={github} target="_new">
+                      <GitHubIcon
+                        sx={{
+                          color: lightSlate,
+                          fontSize: "2rem",
+                          "&:hover": {
+                            color: green,
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </Link>
+                    <LaunchIcon
+                      sx={{
+                        color: lightSlate,
+                        fontSize: "2rem",
+                        "&:hover": {
+                          color: green,
+                          cursor: "pointer",
+                        },
+                      }}
+                    />
+                  </FlexBetween>
 
-              <Typography
-                variant="h7"
-                sx={{
-                  color: green,
-                  pt: "2rem",
-                  pd: "0.5rem",
-                }}
-              >
-                {name}
-              </Typography>
-
-              <Typography
-                sx={{
-                  color: lightSlate,
-                  lineHeight: "1.5",
-                  fontSize: "0.9rem",
-                  fontWeight: "100",
-                  pt: "0.5rem",
-                  pb: "2rem",
-                }}
-              >
-                {description}
-              </Typography>
-
-              <Box sx={{ display: "flex", justifyContent: "start", pb: "0", gap: "1.5rem", flexWrap: "wrap" }} >
-                {technologies.map((value) => (
-                  <Typography key={value} sx={{
-                      color: lightSlate,
-                      fontWeight: "200",
-                      fontSize: "0.85rem",
+                  <Typography
+                    variant="h7"
+                    sx={{
+                      color: green,
+                      pt: "2rem",
+                      pd: "0.5rem",
                     }}
                   >
-                    {value}
+                    {name}
                   </Typography>
-                ))}
-              </Box>
-            </CardContent>
-          </Card>
-        </Link>
-        )
-      })}
+
+                  <Typography
+                    sx={{
+                      color: lightSlate,
+                      lineHeight: "1.5",
+                      fontSize: "0.9rem",
+                      fontWeight: "100",
+                      pt: "0.5rem",
+                      pb: "2rem",
+                    }}
+                  >
+                    {description}
+                  </Typography>
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "start",
+                      pb: "0",
+                      gap: "1.5rem",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {technologies.map((value) => (
+                      <Typography
+                        key={value}
+                        sx={{
+                          color: lightSlate,
+                          fontWeight: "200",
+                          fontSize: "0.85rem",
+                        }}
+                      >
+                        {value}
+                      </Typography>
+                    ))}
+                  </Box>
+                </CardContent>
+              </Card>
+            </Link>
+          );
+        })}
     </Box>
-  )
+  );
 };
 
 export default ProjectCards;
