@@ -29,7 +29,7 @@ const Projects = () => {
             color: "white"
           }}
         >
-          My Projects
+          My Apps
         </Typography>
         <Link
           variant="a"

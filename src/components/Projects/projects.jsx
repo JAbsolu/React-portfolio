@@ -13,7 +13,7 @@ const ProjectCards = () => {
   const lightSlate = themeSettings.palette.primary.lightSlate;
   
   return (
-    <Box sx={{ display: "flex", gap: "1rem", }}>
+    <Box sx={{ display: "flex", gap: "1rem", scrollbars: "none"}}>
       {projects.length > 0  && projects.map((project) => {
         const name = project.name;
         const frontend = project.frontendView;
