@@ -29,7 +29,7 @@ export const projects = [
   {
     name: "Investi.tech - AI Stock Research",
     frontendView: "https://www.investi.tech/",
-    github: "https://github.com/JAbsolu/Invest.ai",
+    github: "https://github.com/JAbsolu/Investi-3.0-React-Frontend",
     technology: ["OpenAI GPT", "Node JS", "Next JS", "Firebase", "AWS"],
     description:
       "An AI app that leverages openAI-GPT-40 and Yahoo Finance to determine whether a stock is a bearish or bullish.",
